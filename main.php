@@ -224,7 +224,7 @@
 </html>
 
 <?php
-$servername = "localhost";
+$servername = "localhost:3306";
 $username = "root";
 $password = "r3apb3n3fit";
 $dbname = "nd_manager";
