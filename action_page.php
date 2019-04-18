@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+</html>
 <?php
 $servername = "localhost:3306";
 $username = "admin";
@@ -31,10 +37,23 @@ if(isset($_POST['submit'])){
 
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting... ";
-    header('location: main.php');
+    echo("<script>swal({
+          icon: 'success',
+          title: 'Congratulations!',
+          text: 'You are a great citizen! Thanks for the submission :)',
+          button: 'OK',
+          closeOnClickOutside: false
+    }).then(window.location='main.php');</script>");
     }
 else {
     echo "Error: " . $sql . "<br>" . $conn->error;
+    echo("<script>swal({
+          icon: 'error',
+          title: 'Oops!',
+          text: 'There's an error on our end :(. Contact us!',
+          button: 'OK',
+          closeOnClickOutside: false
+    }).then(window.location='main.php');</script>");
     }
     $conn->close();
 }

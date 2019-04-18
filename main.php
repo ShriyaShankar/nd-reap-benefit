@@ -15,8 +15,11 @@
     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
     crossorigin=""></script>
 
+    <!-- Bootstrap CSS for Grid System -->
+
     <style>
-            #mapid { height: 600px;
+            #mapid {
+            height: 400px;
             z-index: 1;
             }
 
@@ -97,7 +100,9 @@
             </style>
 </head>
 <body>
+  <div class="container">
     <div id="mapid"></div>
+  </div>
     <div>
             <button onclick="mainApp.logOut()">LogOut</button>
 
