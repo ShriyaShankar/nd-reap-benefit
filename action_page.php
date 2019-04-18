@@ -1,8 +1,8 @@
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "localhost:3306";
+$username = "admin";
+$password = "r3apb3n3fit";
 $dbname = "nd_manager";
 $table = "data";
 // Create connection
@@ -10,13 +10,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-} 
+}
 else
 {
     echo "Connection successful <br>";
 }
 
-   
+
 if(isset($_POST['submit'])){
     echo "Record submitted. ";
 
@@ -28,11 +28,11 @@ if(isset($_POST['submit'])){
     $location=$_POST['location'];
     $sql = "INSERT INTO data (name, latitude, longitude, category, description, location)
     VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location')";
-    
+
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting... ";
     header('location: main.php');
-    } 
+    }
 else {
     echo "Error: " . $sql . "<br>" . $conn->error;
     }
