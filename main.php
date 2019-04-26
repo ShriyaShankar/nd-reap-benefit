@@ -6,7 +6,7 @@
     <title>ND Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
@@ -166,31 +166,25 @@
 
 		mymap.locate({setView: true, maxZoom: 16});
 		function onLocationFound(e) {
-		var radius = e.accuracy / 2;
-
-		L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-
-		L.circle(e.latlng, radius).addTo(mymap);
+		  var radius = e.accuracy / 2;
+      L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+      L.circle(e.latlng, radius).addTo(mymap);
 //            document.getElementById('lat').innerHTML = e.latlng;
-
-		}
+      }
 
 		function onLocationError(e) {
-		alert(e.message);
+		  alert(e.message);
 		}
-		mymap.on('locationerror', onLocationError);
-
+    
+        mymap.on('locationerror', onLocationError);
         mymap.on('locationfound', onLocationFound);
 
-        function onLocationFound(e) {
-            var radius = e.accuracy / 2;
-
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-            L.circle(e.latlng, radius).addTo(mymap);
-        }
-        mymap.on('locationfound', onLocationFound);
+    // function onLocationFound(e) {
+    //     var radius = e.accuracy / 2;
+    //     L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+    //     L.circle(e.latlng, radius).addTo(mymap);
+    //     }
+        // mymap.on('locationfound', onLocationFound);
 
 
         function onMapClick(e) {
@@ -199,29 +193,17 @@
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-
           //  alert(one);
-
-          //  loc.push(location)
-
-            alert("You clicked the map at " + location);
+          //  loc.push(location);
+            alert("Thank you for selecting location. Fill form below!");
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
-
             document.getElementById('lcn').value= res;
           //  alert(res[0]);
         }
-
         mymap.on('click', onMapClick);
 
-        // function openForm() {
-        //     document.getElementById("myForm").style.display = "block";
-        // }
-
-        // function closeForm() {
-        //     document.getElementById("myForm").style.display = "none";
-        // }
     </script>
 </body>
 </html>
