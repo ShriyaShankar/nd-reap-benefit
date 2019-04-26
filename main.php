@@ -263,11 +263,6 @@ if ($result->num_rows > 0) {
          }
          // Creating a Marker
          var marker = L.marker([$floatlat, $floatlng], markerOptions);
-         
-         // Adding popup to the marker
-         marker.bindPopup('Waste/Water/Air/Sanitation').openPopup();
-         
-         // Adding marker to the map
          marker.addTo(mymap);
        // L.marker([$floatlat, $floatlng]).addTo(mymap);
         </script>");
