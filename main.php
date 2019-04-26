@@ -142,7 +142,7 @@
 
     </div>
 
-    <button class="open-button" onclick="openForm()">Open Form</button>
+    <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
 
 
 
@@ -226,9 +226,9 @@
 </html>
 
 <?php
-$servername = "localhost:3306";
-$username = "admin";
-$password = "r3apb3n3fit";
+$servername = "srv-captain--mysqldb-db:3306";
+$username = "root";
+$password = "S0lvesm@lld3ntbig";
 $dbname = "nd_manager";
 
 // Create connection
