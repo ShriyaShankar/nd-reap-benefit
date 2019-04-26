@@ -11,11 +11,9 @@ var uid = null;
           function getUserName() {
               return firebase.auth().currentUser.displayName;
           }
-console.log(firebase.auth().currentUser);
           var userName = getUserName();
           if(userName==null) {
             userName = firebase.auth().currentUser.phoneNumber;
-            console.log(firebase.auth().currentUser);
           }
           document.getElementById("form-name").setAttribute("value", userName);
         } else {
