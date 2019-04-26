@@ -109,12 +109,11 @@
 
 
             <form action="action_page.php" method = "POST" class="form-container">
-                <h1>Login</h1>
+                <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
             <p id="locationdisplay"></p>
                 <label for="name"><b>Name</b></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
-
                 <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
                 <label for="longitude"><b>Longitude</b></label>
@@ -130,6 +129,7 @@
                       <option value='flood'>Urban Flooding</option>
                     </optgroup>
                 </select>
+                <br>
                 <label for="description"><b>Description</b></label>
                 <input type="text" placeholder="Description:" name="description" required>
 
@@ -215,7 +215,7 @@
 </html>
 
 <?php
-$servername = "localhost:3306";
+$servername = "srv-captain--mysqldb-db:3306";
 $username = "admin";
 $password = "r3apb3n3fit";
 $dbname = "nd_manager";
