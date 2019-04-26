@@ -6,9 +6,9 @@
   </head>
 </html>
 <?php
-$servername = "localhost:3306";
-$username = "admin";
-$password = "r3apb3n3fit";
+$servername = "srv-captain--mysqldb-db:3306";
+$username = "root";
+$password = "S0lvesm@lld3ntbig";
 $dbname = "nd_manager";
 $table = "data";
 // Create connection
