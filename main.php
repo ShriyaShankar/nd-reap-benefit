@@ -113,7 +113,7 @@
                  <p>The Location is </p>
             <p id="locationdisplay"></p>
                 <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Enter Name" name="name" required>
+                <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
 
                 <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
