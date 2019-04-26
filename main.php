@@ -127,6 +127,7 @@
                       <option value="water">Water</option>
                       <option value="air">Air</option>
                       <option value="sanitation">Sanitation</option>
+                      <option value='flood'>Urban Flooding</option>
                     </optgroup>
                 </select>
                 <label for="description"><b>Description</b></label>
