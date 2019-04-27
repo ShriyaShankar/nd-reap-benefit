@@ -221,8 +221,9 @@
 //        shadowAnchor: [4, 62],
 //        popupAnchor:  [-3, -76]
     }
-            var water = new icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
+            
 });
+        var water = new icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
         
 //        var iconOptions = {
 //            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
@@ -268,7 +269,7 @@ if ($result->num_rows > 0) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
         $cat = $row["category"];
-        if($cat=='water')
+        if($cat=="water")
        // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
        // </script>");
         {  
