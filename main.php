@@ -178,6 +178,7 @@
       document.getElementById("locationdisplay").innerHTML = e.latlng;
       document.getElementById('lat').setAttribute("value", e.latlng.lat);
       document.getElementById('long').setAttribute("value", e.latlng.lng);
+      document.getElementById('lnc').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`);
       }
 
 		function onLocationError(e) {
