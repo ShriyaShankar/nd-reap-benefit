@@ -119,15 +119,16 @@
                 <label for="longitude"><b>Longitude</b></label>
                 <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
 
-                <label for="category"><b>Category<br></b></label>
-                <select>
-                  <optgroup name="category" label="category">
+              //  <label for="category"><b>Category<br></b></label>
+                <label>Category:<br></label>
+                <select name="category">
+                 // <optgroup name="category" label="Category">
                       <option value="waste">Waste</option>
                       <option value="water">Water</option>
                       <option value="air">Air</option>
                       <option value="sanitation">Sanitation</option>
                       <option value='flood'>Urban Flooding</option>
-                    </optgroup>
+                  //  </optgroup>
                 </select>
                 <br>
                 <label for="description"><b>Description</b></label>
