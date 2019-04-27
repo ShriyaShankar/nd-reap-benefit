@@ -163,7 +163,7 @@
             // accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-            minZoom: 4, 
+            minZoom: 4,
             maxZoom: 20,
             id: 'mapbox.streets',
             //accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
@@ -175,13 +175,15 @@
 		  var radius = e.accuracy / 2;
       L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
       L.circle(e.latlng, radius).addTo(mymap);
+      document.getElementById("locationdisplay").innerHTML = e.latlng;
+      console.log(e.latlng);
 //            document.getElementById('lat').innerHTML = e.latlng;
       }
 
 		function onLocationError(e) {
 		  alert(e.message);
 		}
-    
+
         mymap.on('locationerror', onLocationError);
         mymap.on('locationfound', onLocationFound);
 
