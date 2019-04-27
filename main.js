@@ -18,7 +18,7 @@ var uid = null;
             document.getElementById("identifier").innerHTML = "<b>Phone Number</b>";
             identifier = firebase.auth().currentUser.phoneNumber;
           }
-          document.getElementById("form-name").setAttribute("value", userName);
+          document.getElementById("form-name").setAttribute("value", identifier);
         } else {
             uid = null;
             window.location.replace("index.html");
