@@ -16,7 +16,7 @@ $table = "data";
 $dbh = new PDO('mysql:host=srv-captain--mysqldb-db;dbname=nd_manager', $username, $password);
 if ($dbh != null) {
     echo "Connected";
-} catch (PDOException $e) {
+} else {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
