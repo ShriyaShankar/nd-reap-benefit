@@ -212,7 +212,7 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-        
+        alert(ome);
         var iconOptions = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
             iconSize: [50, 50]
