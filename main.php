@@ -211,21 +211,21 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-        alert(e.latlng.lat);
-        var iconOptions = {
-            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
-            iconSize: [50, 50]
-         }
-         // Creating a custom icon
-         var customIcon = L.icon(iconOptions);
-         
-         // Creating Marker Options
-         var markerOptions = {
-            title: "Location",
-            clickable: true,
-            draggable: true,
-            icon: customIcon
-         }
+       // alert(e.latlng.lat);
+//        var iconOptions = {
+//            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
+//            iconSize: [50, 50]
+//         }
+//         // Creating a custom icon
+//         var customIcon = L.icon(iconOptions);
+//         
+//         // Creating Marker Options
+//         var markerOptions = {
+//            title: "Location",
+//            clickable: true,
+//            draggable: true,
+//            icon: customIcon
+//         }
          // Creating a Marker
 //         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
 //         marker.addTo(mymap);
@@ -257,7 +257,21 @@ if ($result->num_rows > 0) {
         $floatlng = floatval( $row["longitude"]);
        // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
        // </script>");
-        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+        echo("<script> var iconOptions = {
+            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
+            iconSize: [50, 50]
+         }
+         // Creating a custom icon
+         var customIcon = L.icon(iconOptions);
+         
+         // Creating Marker Options
+         var markerOptions = {
+            title: "Location",
+            clickable: true,
+            draggable: true,
+            icon: customIcon
+         }
+         var marker = L.marker([$floatlat, $floatlng], markerOptions);
         marker.addTo(mymap); </script>");
  //    echo("<script> console.log($floatlat); </script>");
 
