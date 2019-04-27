@@ -227,8 +227,8 @@
             icon: customIcon
          }
          // Creating a Marker
-         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
-         marker.addTo(mymap);
+//         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
+//         marker.addTo(mymap);
          
 
     </script>
@@ -255,8 +255,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
-        </script>");
+       // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
+       // </script>");
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+        marker.addTo(mymap); </script>");
  //    echo("<script> console.log($floatlat); </script>");
 
  }
