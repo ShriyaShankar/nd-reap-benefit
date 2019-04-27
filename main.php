@@ -195,14 +195,13 @@
     //     }
         // mymap.on('locationfound', onLocationFound);
 
-        var one, two; 
         function onMapClick(e) {
             var location = e.latlng;
             var loc = String(location);
-            one = Math.round(e.latlng.lat * 100000)/100000;
-            two = Math.round(e.latlng.lng * 100000)/100000;
+            var one = Math.round(e.latlng.lat * 100000)/100000;
+            var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-          //  alert(one);
+           // alert(one);
           //  loc.push(location);
             alert("Thank you for selecting location. Fill form below!");
             document.getElementById('locationdisplay').innerHTML = location;
@@ -212,7 +211,7 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-        alert(one);
+        alert(e.latlng.lat);
         var iconOptions = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
             iconSize: [50, 50]
