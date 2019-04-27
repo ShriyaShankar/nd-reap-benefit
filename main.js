@@ -8,12 +8,14 @@ var uid = null;
             uid = user.uid;
           // User is signed in.
           // Returns the signed-in user's display name.
-          function getUserName() {
-              return firebase.auth().currentUser.displayName;
+          function getUserEmail() {
+              document.getElementById("identifier").innerHTML = "<b>Email</b>";
+              return firebase.auth().currentUser.email;
           }
-          var userName = getUserName();
-          if(userName==null) {
-            userName = firebase.auth().currentUser.phoneNumber;
+          var identifier = getUserEmail();
+          if(identifier==null) {
+            document.getElementById("identifier").innerHTML = "<b>Phone Number</b>";
+            identifier = firebase.auth().currentUser.phoneNumber;
           }
           document.getElementById("form-name").setAttribute("value", userName);
         } else {

@@ -112,7 +112,7 @@
                 <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
             <p id="locationdisplay"></p>
-                <label for="name"><b>Name</b></label>
+                <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
