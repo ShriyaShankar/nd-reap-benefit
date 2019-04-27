@@ -6,7 +6,7 @@
     <title>ND Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
@@ -109,12 +109,11 @@
 
 
             <form action="action_page.php" method = "POST" class="form-container">
-                <h1>Login</h1>
+                <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
             <p id="locationdisplay"></p>
                 <label for="name"><b>Name</b></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
-
                 <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
                 <label for="longitude"><b>Longitude</b></label>
@@ -130,6 +129,7 @@
                       <option value='flood'>Urban Flooding</option>
                     </optgroup>
                 </select>
+                <br>
                 <label for="description"><b>Description</b></label>
                 <input type="text" placeholder="Description:" name="description" required>
 
@@ -156,41 +156,41 @@
     <script>
         var mymap = L.map('mapid'), infoWindow;
       //  mymap.locate({setView: true, maxZoom: 18});
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            // maxZoom: 18,
+            // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            // // maxZoom: 18,
+            // id: 'mapbox.streets',
+            // accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+            minZoom: 4, 
+            maxZoom: 20,
             id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
+            //accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
         }).addTo(mymap);
 
 
 		mymap.locate({setView: true, maxZoom: 16});
 		function onLocationFound(e) {
-		var radius = e.accuracy / 2;
-
-		L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-
-		L.circle(e.latlng, radius).addTo(mymap);
+		  var radius = e.accuracy / 2;
+      L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+      L.circle(e.latlng, radius).addTo(mymap);
 //            document.getElementById('lat').innerHTML = e.latlng;
-
-		}
+      }
 
 		function onLocationError(e) {
-		alert(e.message);
+		  alert(e.message);
 		}
-		mymap.on('locationerror', onLocationError);
-
+    
+        mymap.on('locationerror', onLocationError);
         mymap.on('locationfound', onLocationFound);
 
-        function onLocationFound(e) {
-            var radius = e.accuracy / 2;
-
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-            L.circle(e.latlng, radius).addTo(mymap);
-        }
-        mymap.on('locationfound', onLocationFound);
+    // function onLocationFound(e) {
+    //     var radius = e.accuracy / 2;
+    //     L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+    //     L.circle(e.latlng, radius).addTo(mymap);
+    //     }
+        // mymap.on('locationfound', onLocationFound);
 
 
         function onMapClick(e) {
@@ -199,41 +199,29 @@
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-
           //  alert(one);
-
-          //  loc.push(location)
-
-            alert("You clicked the map at " + location);
+          //  loc.push(location);
+            alert("Thank you for selecting location. Fill form below!");
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
-
             document.getElementById('lcn').value= res;
           //  alert(res[0]);
         }
-
         mymap.on('click', onMapClick);
 
-        // function openForm() {
-        //     document.getElementById("myForm").style.display = "block";
-        // }
-
-        // function closeForm() {
-        //     document.getElementById("myForm").style.display = "none";
-        // }
     </script>
 </body>
 </html>
 
 <?php
-$servername = "localhost:3306";
+$servername = "srv-captain--mysqldb-db:3306";
 $username = "admin";
 $password = "r3apb3n3fit";
 $dbname = "nd_manager";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
