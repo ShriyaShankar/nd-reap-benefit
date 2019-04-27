@@ -176,8 +176,8 @@
       L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
       L.circle(e.latlng, radius).addTo(mymap);
       document.getElementById("locationdisplay").innerHTML = e.latlng;
-      console.log(e.latlng);
-//            document.getElementById('lat').innerHTML = e.latlng;
+      document.getElementById('lat').setAttribute("value", e.latlng.lat);
+      document.getElementById('long').setAttribute("value", e.latlng.lng);
       }
 
 		function onLocationError(e) {
