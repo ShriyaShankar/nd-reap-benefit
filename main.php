@@ -122,6 +122,7 @@
               //  <label for="category"><b>Category<br></b></label>
                 <label>Category:<br></label>
                 <select name="category">
+                    <option>---Select Category--</option>
                  // <optgroup name="category" label="Category">
                       <option value="waste">Waste</option>
                       <option value="water">Water</option>
@@ -137,7 +138,7 @@
                 <label for="location"><b>Location</b></label>
                 <input type="text" placeholder="Location:" name="location" required id="lcn">
 
-                <input type="submit" value="submit" name="submit">
+                <input type="submit" value="Submit" name="submit">
 
 <!--                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>-->
               </form>
