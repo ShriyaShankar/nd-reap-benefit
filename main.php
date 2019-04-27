@@ -119,17 +119,15 @@
                 <label for="longitude"><b>Longitude</b></label>
                 <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
 
-              //  <label for="category"><b>Category<br></b></label>
-                <label>Category:<br></label>
+             
+                <label><b>Category:<br><b/></label>
                 <select name="category">
                     <option>---Select Category--</option>
-                 // <optgroup name="category" label="Category">
                       <option value="waste">Waste</option>
                       <option value="water">Water</option>
                       <option value="air">Air</option>
                       <option value="sanitation">Sanitation</option>
                       <option value='flood'>Urban Flooding</option>
-                  //  </optgroup>
                 </select>
                 <br>
                 <label for="description"><b>Description</b></label>
@@ -156,7 +154,7 @@
     <script src="firebase.js"></script>
     <script src="main.js"></script>
     <script>
-        var mymap = L.map('mapid'), infoWindow;
+        var mymap = L.map('mapid');
       //  mymap.locate({setView: true, maxZoom: 18});
             // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
