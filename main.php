@@ -195,7 +195,7 @@
     //     }
         // mymap.on('locationfound', onLocationFound);
 
-
+        
         function onMapClick(e) {
             var location = e.latlng;
             var loc = String(location);
@@ -228,7 +228,7 @@
             icon: customIcon
          }
          // Creating a Marker
-         var marker = L.marker(e.latlng, markerOptions);
+         var marker = L.marker([$e.latlng.lat,$e.latlng.lng], markerOptions);
          marker.addTo(mymap);
          
 
