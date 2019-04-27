@@ -13,12 +13,15 @@ $table = "data";
 // echo "Connected successfully";
 // $conn->close();
 
-$dbh = new PDO('mysql:host=srv-captain--mysqldb-db;dbname=nd_manager', $username, $password);
-if ($dbh != null) {
-    echo "Connected";
-} else {
-    print "Error!: " . $e->getMessage() . "<br/>";
-    die();
-}
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed: " . $e->getMessage();
+    }
 ?>
 
