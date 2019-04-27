@@ -217,7 +217,7 @@
 </html>
 
 <?php
-$servername = "srv-captain--mysqldb-db:3306";
+$servername = "srv-captain--mysqldb-db";
 $username = "root";
 $password = "S0lvesm@lld3ntbig";
 $dbname = "nd_manager";

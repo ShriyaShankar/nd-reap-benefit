@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 </html>
+
 <?php
-$servername = "srv-captain--mysqldb-db:3306";
+$servername = "srv-captain--mysqldb-db";
 $username = "root";
 $password = "S0lvesm@lld3ntbig";
 $dbname = "nd_manager";
