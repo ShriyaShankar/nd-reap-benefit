@@ -195,12 +195,12 @@
     //     }
         // mymap.on('locationfound', onLocationFound);
 
-        
+        var one, two; 
         function onMapClick(e) {
             var location = e.latlng;
             var loc = String(location);
-            var one = Math.round(e.latlng.lat * 100000)/100000;
-            var two = Math.round(e.latlng.lng * 100000)/100000;
+            one = Math.round(e.latlng.lat * 100000)/100000;
+            two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
           //  alert(one);
           //  loc.push(location);
@@ -228,7 +228,7 @@
             icon: customIcon
          }
          // Creating a Marker
-         var marker = L.marker([parseFloat(e.latlng.lat),parseFloat(e.latlng.lng)], markerOptions);
+         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
          marker.addTo(mymap);
          
 
