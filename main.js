@@ -5,7 +5,6 @@ var mainApp = {};
 var uid = null;
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-          console.log(firebase.auth().currentUser);
             uid = user.uid;
           // User is signed in.
           // Returns the signed-in user's display name.
@@ -19,6 +18,10 @@ var uid = null;
             identifier = firebase.auth().currentUser.phoneNumber;
           }
           document.getElementById("form-name").setAttribute("value", identifier);
+         if(firebase.auth().currentUser.emailVerified===false && firebase.auth().currentUser.email!=null){
+               window.location = "/verify.html";
+         }
+
         } else {
             uid = null;
             window.location.replace("index.html");

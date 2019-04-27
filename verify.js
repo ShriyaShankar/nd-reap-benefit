@@ -1,7 +1,7 @@
 firebase.auth().onAuthStateChanged(firebaseUser => {
            if(firebaseUser){
              if(firebaseUser.emailVerified===true){
-               window.location = "page1.html";
+               window.location = "/main.php";
              }
              else{
                hide.classList.remove('hide');
@@ -13,18 +13,6 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
                  // An error happened.
                })
              }
-           }
-           else{
-             hide.classList.add('hide');
-             swal({
-               icon: "error",
-               title: "Oops!",
-               text: "Please Sign In. Try Again!",
-               button: "OK",
-               closeOnClickOutside: false
-             }).then(function(){
-               window.location="login.html";
-             });
            }
        });
 
