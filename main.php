@@ -228,7 +228,7 @@
             icon: customIcon
          }
          // Creating a Marker
-         var marker = L.marker([12.94417,77.62939], markerOptions);
+         var marker = L.marker(e.latlng, markerOptions);
          marker.addTo(mymap);
          
 
