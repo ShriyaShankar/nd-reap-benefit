@@ -154,7 +154,7 @@
     <script src="firebase.js"></script>
     <script src="main.js"></script>
     <script>
-        var mymap = L.map('mapid');
+        var mymap = L.map('mapid'), infoWindow;
       //  mymap.locate({setView: true, maxZoom: 18});
             // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             // attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -212,6 +212,25 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
+        
+        var iconOptions = {
+            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
+            iconSize: [50, 50]
+         }
+         // Creating a custom icon
+         var customIcon = L.icon(iconOptions);
+         
+         // Creating Marker Options
+         var markerOptions = {
+            title: "Location",
+            clickable: true,
+            draggable: true,
+            icon: customIcon
+         }
+         // Creating a Marker
+         var marker = L.marker([12.90113, 77.58639], markerOptions);
+         marker.addTo(mymap);
+         
 
     </script>
 </body>
