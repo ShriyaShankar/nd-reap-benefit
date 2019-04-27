@@ -121,12 +121,12 @@
 
                 <label for="category"><b>Category<br></b></label>
                 <select>
-                  <optgroup label="category">
-                      <option name="category" value="waste">Waste</option>
-                      <option name="category" value="water">Water</option>
-                      <option name="category" value="air">Air</option>
-                      <option name="category" value="sanitation">Sanitation</option>
-                      <option name="category" value='flood'>Urban Flooding</option>
+                  <optgroup name="category" label="category">
+                      <option value="waste">Waste</option>
+                      <option value="water">Water</option>
+                      <option value="air">Air</option>
+                      <option value="sanitation">Sanitation</option>
+                      <option value='flood'>Urban Flooding</option>
                     </optgroup>
                 </select>
                 <br>
