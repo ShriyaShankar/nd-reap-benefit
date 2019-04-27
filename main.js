@@ -5,6 +5,7 @@ var mainApp = {};
 var uid = null;
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
+          console.log(firebase.auth().currentUser);
             uid = user.uid;
           // User is signed in.
           // Returns the signed-in user's display name.

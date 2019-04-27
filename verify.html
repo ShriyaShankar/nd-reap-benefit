@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Email Verification | ND Manager<title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/auth.css">
+  </head>
+
+<body>
+  <div class="hide" id="hide">
+  <div class="login-page">
+    <div class="form">
+      <div class="verify-email">
+        <h4>Please check your email and hit the link in the verification email.</h4>
+        <button id="verify-button" onclick="send_verification()">Re-send Verification Email</button>
+        <p>Once you're done verifying your email <a href="../verify-email.html">click here</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+<script src="firebase.js"></script>
+<script src="verify.js"></script>
+</body>
+</html>
