@@ -220,7 +220,7 @@
         });
         var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/67/67780.svg'});
         var waste = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1/1570.svg'});
-        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1349/1349288.svg'});
+        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/62/62832.svg'});
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1092/1092932.svg'});
 
