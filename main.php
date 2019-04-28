@@ -218,11 +218,11 @@
             iconSize: [25, 25]
         }
         });
-        var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/427/427112.svg'});
-        var waste = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/148/148962.svg'});
-        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1349/1349237.svg'});
+        var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/67/67780.svg'});
+        var waste = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1/1570.svg'});
+        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1349/1349288.svg'});
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
-        var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1098/1098150.svg'});
+        var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1092/1092932.svg'});
 
          
 
