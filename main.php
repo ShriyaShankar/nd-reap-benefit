@@ -256,9 +256,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-//        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
-//        marker.addTo(mymap);
-//        </script>");
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+        marker.addTo(mymap);
+        </script>");
         }
 
 } else {
