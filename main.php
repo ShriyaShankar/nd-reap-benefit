@@ -194,6 +194,8 @@
     //     L.circle(e.latlng, radius).addTo(mymap);
     //     }
         // mymap.on('locationfound', onLocationFound);
+        
+        alert("Click anywhere on the map to pinpoint location of the problem you wish to report")
 
         function onMapClick(e) {
             var location = e.latlng;
