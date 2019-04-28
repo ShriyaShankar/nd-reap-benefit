@@ -109,9 +109,9 @@
 
 
             <form action="action_page.php" method = "POST" class="form-container">
-                <!-- <h1>Login</h1> -->
+                <!-- <h1>Login</h1> 
                  <p>The Location is </p>
-            <p id="locationdisplay"></p>
+            <p id="locationdisplay"></p> -->
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
