@@ -269,14 +269,15 @@ if ($result->num_rows > 0) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
         $cat = $row["category"];
-        if($cat=="water")
-       // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
-       // </script>");
-        {  
-            echo("<script> 
-            L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
-                </script>");
-        }
+        alert($cat);
+//        if($cat=="water")
+//       // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
+//       // </script>");
+//        {  
+//            echo("<script> 
+//            L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+//                </script>");
+//        }
         }
  //    echo("<script> console.log($floatlat); </script>");
 
