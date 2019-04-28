@@ -114,10 +114,10 @@
             <p id="locationdisplay"></p>
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
-                <label for="latitude"><b>Latitude</b></label>
+             <!--   <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
                 <label for="longitude"><b>Longitude</b></label>
-                <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
+                <input type="text" placeholder="Enter longitude" name="longitude" required id="long"> -->
 
              
                 <label><b>Category:<br><b/></label>
@@ -130,8 +130,8 @@
                       <option value='flood'>Urban Flooding</option>
                 </select>
                 <br>
-                <label for="description"><b>Description</b></label>
-                <input type="text" placeholder="Description:" name="description" required>
+                <label for="description"><br><b>Description</b></label>
+                <input type="text" placeholder="Describe the problem" name="description" required>
 
                 <label for="location"><b>Location</b></label>
                 <input type="text" placeholder="Location:" name="location" required id="lcn">
