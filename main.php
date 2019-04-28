@@ -211,17 +211,6 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-      //  alert(e.latlng.lat);
-//        
-//        var iconOptionsWater = {
-//            iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
-//            iconSize: [50, 50]
-//         }
-//        
-//        var iconOptionsWaste = {
-//            iconUrl: 'http://pluspng.com/img-png/use-dustbin-png-png-small-medium-large-360.png',
-//            iconSize: [50, 50]
-//         }
         
         var category_icon = L.Icon.extend({
         options: {
@@ -230,20 +219,10 @@
         });
         var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
         var waste = new category_icon({iconUrl: 'http://pluspng.com/img-png/use-dustbin-png-png-small-medium-large-360.png'});
-         // Creating a custom icon
-//         var customIconWater = L.icon(iconOptionsWater);
-//         var customIconWaste = L.icon(iconOptionsWaste);
-//         
-         // Creating Marker Options
-//         var markerOptions = {
-//            title: "Location",
-//            clickable: true,
-//            draggable: true,
-//            icon: customIcon
-//         }
-         // Creating a Marker
-//         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
-//         marker.addTo(mymap);
+        var air = new category_icon({iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaiaQXtaRXlh2jMiXFKxuBsdlaHFBiRidpKpKGMW9briWo9Dy'});
+        var sanitation = new category_icon({iconUrl: 'https://png.pngtree.com/svg/20161211/4c27dc7c9c.svg'});
+        var flood = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/free/png-256/flood-symbol-alarm-attention-board-error-warning-38918.png'});
+
          
 
     </script>
@@ -279,8 +258,20 @@ if ($result->num_rows > 0) {
         echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
         </script>");
         }
-    }
+         if($cat == 'flood'){
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
+        </script>");
+         }
+        if($cat == 'air'){
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
+        </script>");
+        }
+        if($cat == 'sanitation'){
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
+        </script>");
+        }
 
+    }
 } else {
     echo "0 results";
 }
