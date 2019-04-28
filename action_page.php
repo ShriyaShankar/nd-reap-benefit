@@ -33,8 +33,8 @@ if(isset($_POST['submit'])){
     $description=$_POST['description'];
     $category=$_POST['category'];
     $location=$_POST['location'];
-    $sql = "INSERT INTO data (name, category, description, location)
-    VALUES ('$name', '$category', '$description', '$location')";
+    $sql = "INSERT INTO data (name, latitude, longitude, category, description, location)
+    VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting... ";
