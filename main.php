@@ -214,7 +214,9 @@
         
         var category_icon = L.Icon.extend({
         options: {
-            iconSize: [25, 25]
+            iconSize: [25, 25],
+            iconAnchor:   [20, 20],
+             popupAnchor:  [-3, -76]
         }
         });
         var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/427/427112.svg'});
