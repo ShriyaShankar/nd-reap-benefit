@@ -228,7 +228,7 @@
             iconSize:     [38, 95],
         }
         });
-        var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'}),
+        var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
          // Creating a custom icon
 //         var customIconWater = L.icon(iconOptionsWater);
 //         var customIconWaste = L.icon(iconOptionsWaste);
