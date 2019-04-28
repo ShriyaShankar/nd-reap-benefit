@@ -210,7 +210,7 @@
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
-           // alert("Report added!");
+            alert("Report added!");
         }
         mymap.on('click', onMapClick);
         
