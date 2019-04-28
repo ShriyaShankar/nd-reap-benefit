@@ -258,19 +258,23 @@ if ($result->num_rows > 0) {
         </script>");
         }
         if($cat == 'water'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+        marker.bindPopup(\"$desc\").openPopup();
         </script>");
         }
          if($cat == 'flood'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
+        marker.bindPopup(\"$desc\").openPopup();
         </script>");
          }
         if($cat == 'air'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
+        marker.bindPopup(\"$desc\").openPopup();
         </script>");
         }
         if($cat == 'sanitation'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
+        marker.bindPopup(\"$desc\").openPopup();
         </script>");
         }
 
