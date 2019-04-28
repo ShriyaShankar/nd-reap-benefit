@@ -213,12 +213,19 @@
         mymap.on('click', onMapClick);
       //  alert(e.latlng.lat);
         
-        var iconOptions = {
+        var iconOptionsWater = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
             iconSize: [50, 50]
          }
+        
+        var iconOptionsWaste = {
+            iconUrl: 'http://pluspng.com/img-png/use-dustbin-png-png-small-medium-large-360.png',
+            iconSize: [50, 50]
+         }
+        
          // Creating a custom icon
-         var customIcon = L.icon(iconOptions);
+         var customIconWater = L.icon(iconOptionsWater);
+         var customIconWaste = L.icon(iconOptionsWaste);
          
          // Creating Marker Options
          var markerOptions = {
@@ -256,7 +263,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], customIconWater);
         marker.addTo(mymap);
         </script>");
         }
