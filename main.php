@@ -254,27 +254,27 @@ if ($result->num_rows > 0) {
         $desc = $row["description"];
         if($cat == 'waste'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
-        marker.bindPopup(\"$desc\").openPopup();
+        marker.bindPopup(\"$desc\");
         </script>");
         }
         if($cat == 'water'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
-        marker.bindPopup(\"$desc\").openPopup();
+        marker.bindPopup(\"$desc\");
         </script>");
         }
          if($cat == 'flood'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
-        marker.bindPopup(\"$desc\").openPopup();
+        marker.bindPopup(\"$desc\");
         </script>");
          }
         if($cat == 'air'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
-        marker.bindPopup(\"$desc\").openPopup();
+        marker.bindPopup(\"$desc\");
         </script>");
         }
         if($cat == 'sanitation'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
-        marker.bindPopup(\"$desc\").openPopup();
+        marker.bindPopup(\"$desc\");
         </script>");
         }
 
