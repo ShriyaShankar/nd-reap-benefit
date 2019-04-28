@@ -207,8 +207,8 @@
           //  loc.push(location);
             alert("Thank you for selecting location. Fill form below!");
             document.getElementById('locationdisplay').innerHTML = location;
-            document.getElementById('lat').value = one;
-            document.getElementById('long').value = two;
+//            document.getElementById('lat').value = one;
+//            document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
           //  alert(res[0]);
         }
