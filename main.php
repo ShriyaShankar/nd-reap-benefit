@@ -255,7 +255,7 @@ if ($result->num_rows > 0) {
         </script>");
         }
         if($cat == 'water'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap).bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap).openPopup("Water");
         </script>");
         }
          if($cat == 'flood'){
