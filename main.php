@@ -109,15 +109,15 @@
 
 
             <form action="action_page.php" method = "POST" class="form-container">
-                <!-- <h1>Login</h1> 
+                <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
-            <p id="locationdisplay"></p> -->
+            <p id="locationdisplay"></p>
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
-             <!--   <label for="latitude"><b>Latitude</b></label>
+                <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
                 <label for="longitude"><b>Longitude</b></label>
-                <input type="text" placeholder="Enter longitude" name="longitude" required id="long"> -->
+                <input type="text" placeholder="Enter longitude" name="longitude" required id="long"> 
 
              
                 <label><b>Category:<br><b/></label>
@@ -195,7 +195,7 @@
     //     }
         // mymap.on('locationfound', onLocationFound);
         
-        alert("Click anywhere on the map to pinpoint location of the problem you wish to report");
+        alert("Click anywhere on the map to pinpoint location of the problem you wish to report")
 
         function onMapClick(e) {
             var location = e.latlng;
@@ -203,13 +203,12 @@
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-            //alert(res);
            // alert(one);
           //  loc.push(location);
             alert("Thank you for selecting location. Fill form below!");
-           // document.getElementById('locationdisplay').innerHTML = location;
-//            document.getElementById('lat').value = one;
-//            document.getElementById('long').value = two;
+            document.getElementById('locationdisplay').innerHTML = location;
+            document.getElementById('lat').value = one;
+            document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
           //  alert(res[0]);
         }
