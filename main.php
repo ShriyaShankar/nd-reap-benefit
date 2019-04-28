@@ -212,6 +212,7 @@
         }
         mymap.on('click', onMapClick);
         alert(e.latlng.lat);
+        
         var iconOptions = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
             iconSize: [50, 50]
