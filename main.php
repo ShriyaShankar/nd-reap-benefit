@@ -203,7 +203,7 @@
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-            alert(res);
+            //alert(res);
            // alert(one);
           //  loc.push(location);
             alert("Thank you for selecting location. Fill form below!");
