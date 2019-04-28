@@ -253,6 +253,7 @@ if ($result->num_rows > 0) {
         $cat = $row["category"];
         if($cat == 'waste'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
+        marker.bindPopup("Waste").openPopup();
         </script>");
         }
         if($cat == 'water'){
