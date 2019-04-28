@@ -275,6 +275,10 @@ if ($result->num_rows > 0) {
         echo("<script> L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
         </script>");
         }
+        if($cat == 'water'){
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+        </script>");
+        }
     }
 
 } else {
