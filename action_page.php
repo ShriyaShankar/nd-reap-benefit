@@ -26,7 +26,7 @@ else
 
 if(isset($_POST['submit'])){
     echo "Record submitted. ";
-
+    echo("<script> alert(\"Record added!\"); </script>");
     $name=$_POST['name'];
     $latitude=$_POST['latitude'];
     $longitude=$_POST['longitude'];
