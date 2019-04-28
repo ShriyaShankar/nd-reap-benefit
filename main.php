@@ -229,6 +229,7 @@
         }
         });
         var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
+        var waste = new category_icon({iconUrl: 'http://pluspng.com/img-png/use-dustbin-png-png-small-medium-large-360.png'});
          // Creating a custom icon
 //         var customIconWater = L.icon(iconOptionsWater);
 //         var customIconWaste = L.icon(iconOptionsWaste);
@@ -269,7 +270,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
         </script>");
         }
 
