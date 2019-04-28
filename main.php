@@ -214,14 +214,14 @@
         
         var category_icon = L.Icon.extend({
         options: {
-            iconSize: [50, 50]
+            iconSize: [25, 25]
         }
         });
-        var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
-        var waste = new category_icon({iconUrl: 'http://pluspng.com/img-png/use-dustbin-png-png-small-medium-large-360.png'});
-        var air = new category_icon({iconUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaiaQXtaRXlh2jMiXFKxuBsdlaHFBiRidpKpKGMW9briWo9Dy'});
-        var sanitation = new category_icon({iconUrl: 'https://png.pngtree.com/svg/20161211/4c27dc7c9c.svg'});
-        var flood = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/free/png-256/flood-symbol-alarm-attention-board-error-warning-38918.png'});
+        var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/427/427112.svg'});
+        var waste = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/148/148962.svg'});
+        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1349/1349237.svg'});
+        var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
+        var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1098/1098150.svg'});
 
          
 
