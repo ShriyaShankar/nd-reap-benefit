@@ -271,7 +271,7 @@ if ($result->num_rows > 0) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
         $cat = $row["category"];
-        alert($cat);
+        echo($cat);
         echo("<script> L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
         </script>");
         }
