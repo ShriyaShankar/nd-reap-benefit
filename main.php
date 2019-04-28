@@ -252,7 +252,7 @@ if ($result->num_rows > 0) {
         $floatlng = floatval( $row["longitude"]);
         $cat = $row["category"];
         if($cat == 'waste'){
-        echo("<script> L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
         </script>");
         }
         if($cat == 'water'){
