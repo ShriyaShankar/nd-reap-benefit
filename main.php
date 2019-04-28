@@ -269,8 +269,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water});
-        marker.addTo(mymap);
+        echo("<script> L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
         </script>");
         }
 
