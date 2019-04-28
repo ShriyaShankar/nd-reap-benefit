@@ -243,7 +243,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT latitude, longitude, category from data";
+$sql = "SELECT latitude, longitude, category, description from data";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -251,9 +251,10 @@ if ($result->num_rows > 0) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
         $cat = $row["category"];
+        $desc = $row["description"];
         if($cat == 'waste'){
         echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
-        marker.bindPopup(\"Waste\").openPopup();
+        marker.bindPopup(\"$desc\").openPopup();
         </script>");
         }
         if($cat == 'water'){
