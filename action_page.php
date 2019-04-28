@@ -7,7 +7,7 @@
 </html>
 
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "admin";
 $password = "r3apb3n3fit";
 $dbname = "nd_manager";
