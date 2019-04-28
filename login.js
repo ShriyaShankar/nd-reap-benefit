@@ -37,4 +37,11 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
       // The start method will wait until the DOM is loaded.
     ui.start('#firebaseui-auth-container', uiConfig);
 
+    firebase.auth().onAuthStateChanged(function(user) {
+      console.log(firebase.auth().currentUser);
+      if(firebase.auth().currentUser){
+            window.location = "/main.php";
+      }
+    });
+
 })()
