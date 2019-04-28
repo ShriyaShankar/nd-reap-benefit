@@ -225,7 +225,7 @@
         
         var category_icon = L.Icon.extend({
         options: {
-            iconSize:     [38, 95],
+            iconSize: [38, 95]
         }
         });
         var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
