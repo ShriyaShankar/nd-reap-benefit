@@ -271,11 +271,12 @@ if ($result->num_rows > 0) {
         echo("<script> L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
         </script>");
         }
+    echo "Report added!";
 
     }
 } else {
     echo "0 results";
 }
-echo "Report added!";
+
 $conn->close();
 ?>
