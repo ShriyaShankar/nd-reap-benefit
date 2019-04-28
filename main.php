@@ -234,9 +234,6 @@
             draggable: true,
             icon: customIcon
          }
-         // Creating a Marker
-         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
-         marker.addTo(mymap);
          
 
     </script>
@@ -256,15 +253,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT latitude, longitude, category from data";
+$sql = "SELECT latitude, longitude from data";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        $cat = $row["category"];
-        alert($cat);
+       // $cat = $row["category"];
+       // alert($cat);
         echo("<script> 
         var marker = L.marker([$floatlat, $floatlng], markerOptions);
         marker.addTo(mymap); 
