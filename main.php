@@ -175,7 +175,7 @@
 		  var radius = e.accuracy / 2;
       L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
       L.circle(e.latlng, radius).addTo(mymap);
-    //  document.getElementById("locationdisplay").innerHTML = e.latlng;
+      document.getElementById("locationdisplay").innerHTML = e.latlng;
       document.getElementById('lat').setAttribute("value", e.latlng.lat);
       document.getElementById('long').setAttribute("value", e.latlng.lng);
       document.getElementById('lcn').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`).readonly = true;
@@ -207,7 +207,7 @@
            // alert(one);
           //  loc.push(location);
             alert("Thank you for selecting location. Fill form below!");
-            document.getElementById('locationdisplay').innerHTML = location;
+           // document.getElementById('locationdisplay').innerHTML = location;
 //            document.getElementById('lat').value = one;
 //            document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
