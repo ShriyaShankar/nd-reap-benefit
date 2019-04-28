@@ -210,7 +210,6 @@
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
-            alert("Report added!");
         }
         mymap.on('click', onMapClick);
         
@@ -277,5 +276,6 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+echo "Report added!";
 $conn->close();
 ?>
