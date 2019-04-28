@@ -225,7 +225,7 @@
         
         var category_icon = L.Icon.extend({
         options: {
-            iconSize: [38, 95]
+            iconSize: [50, 50]
         }
         });
         var water = new category_icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
@@ -263,13 +263,15 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT latitude, longitude from data";
+$sql = "SELECT latitude, longitude, category from data";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
+        $cat = $row["category"];
+        alert($cat);
         echo("<script> L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
         </script>");
         }
