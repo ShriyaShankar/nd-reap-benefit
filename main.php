@@ -211,15 +211,7 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-        
-        
-//        var icon = L.Icon.extend({
-//        options: {
-//        iconSize: [50, 50],
-//        }    
-//        });
-//        var water = new icon({iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg'});
-        
+        alert(e.latlng.lat);
         var iconOptions = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
             iconSize: [50, 50]
@@ -234,6 +226,9 @@
             draggable: true,
             icon: customIcon
          }
+         // Creating a Marker
+//         var marker = L.marker([parseFloat(one),parseFloat(two)], markerOptions);
+//         marker.addTo(mymap);
          
 
     </script>
@@ -260,21 +255,11 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-       // $cat = $row["category"];
-       // alert($cat);
-        echo("<script> 
-        var marker = L.marker([$floatlat, $floatlng], markerOptions);
-        marker.addTo(mymap); 
+        echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
         </script>");
-//        if($cat=="water")
-//       // echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
-//       // </script>");
-//        {  
-//            echo("<script> 
-//            L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
-//                </script>");
-//        }
-        }
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+        marker.addTo(mymap);
+        </script>");
  //    echo("<script> console.log($floatlat); </script>");
 
  }
