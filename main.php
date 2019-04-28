@@ -211,7 +211,7 @@
           //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
-        alert(e.latlng.lat);
+      //  alert(e.latlng.lat);
         
         var iconOptions = {
             iconUrl: 'https://d29fhpw069ctt2.cloudfront.net/icon/image/49039/preview.svg',
@@ -256,14 +256,10 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-//        echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
+//        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
+//        marker.addTo(mymap);
 //        </script>");
-        echo("<script> var marker = L.marker([$floatlat, $floatlng], markerOptions);
-        marker.addTo(mymap);
-        </script>");
- //    echo("<script> console.log($floatlat); </script>");
-
- }
+        }
 
 } else {
     echo "0 results";
