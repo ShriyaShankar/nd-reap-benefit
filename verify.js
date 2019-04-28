@@ -23,6 +23,6 @@ function send_verification(){
   user.sendEmailVerification().then(function() {
 
   }).catch(function(error) {
-    // An error happened.
+    // An error happened Yay!
   })
 }

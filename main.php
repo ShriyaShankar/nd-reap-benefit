@@ -111,15 +111,15 @@
             <form action="action_page.php" method = "POST" class="form-container">
                 <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
-            <p id="locationdisplay"></p> 
+            <p id="locationdisplay"></p>
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
                 <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
                 <label for="longitude"><b>Longitude</b></label>
-                <input type="text" placeholder="Enter longitude" name="longitude" required id="long"> 
+                <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
 
-             
+
                 <label><b>Category:<br><b/></label>
                 <select name="category">
                     <option>---Select Category--</option>
@@ -195,7 +195,7 @@
     //     L.circle(e.latlng, radius).addTo(mymap);
     //     }
         // mymap.on('locationfound', onLocationFound);
-        
+
 
         function onMapClick(e) {
             var location = e.latlng;
@@ -212,7 +212,7 @@
             document.getElementById('lcn').value= res;
         }
         mymap.on('click', onMapClick);
-        
+
         var category_icon = L.Icon.extend({
         options: {
             iconSize: [25, 25]
@@ -224,14 +224,14 @@
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1092/1092932.svg'});
 
-         
+
 
     </script>
 </body>
 </html>
 
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "admin";
 $password = "r3apb3n3fit";
 $dbname = "nd_manager";
