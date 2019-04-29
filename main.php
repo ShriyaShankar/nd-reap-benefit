@@ -17,6 +17,8 @@
 
     <!-- Bootstrap CSS for Grid System -->
 
+    <!-- Sweetalert JS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
             #mapid {
             height: 400px;
@@ -182,7 +184,6 @@
       }
 
 		function onLocationError(e) {
-		  alert(e.message);
       swal({
             icon: 'error',
             title: 'Oops',
@@ -193,7 +194,11 @@
 
         mymap.on('locationerror', onLocationError);
         mymap.on('locationfound', onLocationFound);
-        alert("Click anywhere on the map to pinpoint location of the problem you wish to report");
+        swal({
+              icon: 'info',
+              text: 'Click anywhere on the map to pinpoint location of the problem you wish to report',
+              button: 'OK',
+        });
 
     // function onLocationFound(e) {
     //     var radius = e.accuracy / 2;
