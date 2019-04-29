@@ -44,7 +44,7 @@ if ($conn->query($sql) === TRUE) {
           text: 'You are a great citizen! Thanks for the submission :)',
           button: 'OK',
           closeOnClickOutside: false
-    }).then(window.location='main.php');</script>");
+    }).then(function(){window.location='main.php'});</script>");
     }
 else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -54,7 +54,7 @@ else {
           text: 'There's an error on our end :(. Contact us!',
           button: 'OK',
           closeOnClickOutside: false
-    }).then(window.location='main.php');</script>");
+    }).then(function(){window.location='main.php'});</script>");
     }
     $conn->close();
 }
