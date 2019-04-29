@@ -183,6 +183,12 @@
 
 		function onLocationError(e) {
 		  alert(e.message);
+      swal({
+            icon: 'error',
+            title: 'Oops',
+            text: e.message,
+            button: 'OK',
+      });
 		}
 
         mymap.on('locationerror', onLocationError);
@@ -205,7 +211,11 @@
             var res = one + "," + two;
            // alert(one);
           //  loc.push(location);
-            alert("Thank you for selecting location. Fill form below!");
+            swal({
+                  icon: 'info',
+                  text: 'Thank you for selecting location. Fill form below!',
+                  button: 'OK',
+            });
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
