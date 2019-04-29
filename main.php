@@ -123,8 +123,8 @@
 
 
                 <label><b>Category:<br><b/></label>
-                <select name="category">
-                    <option>---Select Category--</option>
+                <select name="category" required>
+                    <option disabled="disabled" selected="selected">---Select Category--</option>
                       <option value="waste">Waste</option>
                       <option value="water">Water</option>
                       <option value="air">Air</option>
