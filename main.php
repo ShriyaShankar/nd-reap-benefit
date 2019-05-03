@@ -165,7 +165,7 @@ h2 {
                <input type="submit" value="Upload Image" name="submit">  -->
                 Severity: <br> <small> Low </small><input type="range" name="severity" min="0" max="5"> <small> High</small>
                 
-                <label for="location"><b><br>Location</b></label>
+                <label for="location"><b><br><br>Location</b></label>
                 <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
 
                 <input type="submit" value="Submit" name="submit">
