@@ -137,7 +137,7 @@
                     
                 <input type="file" name="fileToUpload" id="fileToUpload">
          <!--       <input type="submit" value="Upload Image" name="submit">  -->
-
+                Severity: <input type="range" name="points" min="0" max="10">
                 <label for="location"><b>Location</b></label>
                 <input type="text" placeholder="Location:" name="location" required id="lcn">
 
