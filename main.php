@@ -110,7 +110,7 @@
 
 
 
-            <form action="action_page.php" method = "POST" class="form-container">
+            <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
                 <!-- <h1>Login</h1> -->
                  <p>The Location is </p>
             <p id="locationdisplay"></p>
@@ -134,6 +134,9 @@
                 <br>
                 <label for="description"><br><b>Description</b></label>
                 <input type="text" placeholder="Describe the problem" name="description" required>
+                    
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
 
                 <label for="location"><b>Location</b></label>
                 <input type="text" placeholder="Location:" name="location" required id="lcn">
