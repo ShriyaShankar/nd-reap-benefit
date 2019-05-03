@@ -136,7 +136,7 @@
                 <input type="text" placeholder="Describe the problem" name="description" required>
                     
                 <input type="file" name="fileToUpload" id="fileToUpload">
-                <input type="submit" value="Upload Image" name="submit">
+         <!--       <input type="submit" value="Upload Image" name="submit">  -->
 
                 <label for="location"><b>Location</b></label>
                 <input type="text" placeholder="Location:" name="location" required id="lcn">
