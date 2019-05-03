@@ -111,7 +111,7 @@ h2 {
   z-index: 100;
 }
 .button {
-  background-color: #4CAF50;
+  background-color: #f44336;
   border: none;
   color: white;
   padding: 15px 32px;
