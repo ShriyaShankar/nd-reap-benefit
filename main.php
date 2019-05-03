@@ -101,11 +101,23 @@
 
             </style>
 </head>
+
+<head>
+<style>
+h2 {
+  position: absolute;
+  left: 100px;
+  top: 150px;
+}
+</style>
+</head>
+    
 <body>
   <div class="container">
     <div id="mapid"></div>
   </div>
     <div>
+            
             <button onclick="mainApp.logOut()">LogOut</button>
 
 
@@ -137,9 +149,10 @@
                     
                 <input type="file" name="fileToUpload" id="fileToUpload">
          <!--       <input type="submit" value="Upload Image" name="submit">  -->
-                Severity: <input type="range" name="points" min="0" max="10">
+                Severity: <input type="range" name="severity" min="0" max="5">
+                
                 <label for="location"><b>Location</b></label>
-                <input type="text" placeholder="Location:" name="location" required id="lcn">
+                <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
 
                 <input type="submit" value="Submit" name="submit">
 
