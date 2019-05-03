@@ -106,8 +106,8 @@
 <style>
 h2 {
   position: absolute;
-  left: 100px;
-  top: 100px;
+  left: 1px;
+  top: 1px;
   z-index: 100;
 }
 </style>
