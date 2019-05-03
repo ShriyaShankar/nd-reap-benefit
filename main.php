@@ -170,8 +170,7 @@ h2 {
                 <style>
                                                                 input[type=file] {
                                                                       width: auto;
-                                                                      background-color: green;
-                                                                      color: white;
+                                                    
                                                                       padding: 14px 20px;
                                                                       margin: 8px 0;
                                                                       border: none;
