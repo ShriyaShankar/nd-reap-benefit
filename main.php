@@ -124,22 +124,22 @@ h2 {
 }
 </style>
 </head>
-    
+
 <body>
   <div class="container">
     <div id="mapid"></div>
   </div>
     <div>
-            
+
           <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
 
 
 
             <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
                 <!-- <h1>Login</h1> -->
-                
+
                  <p>The Location is <p id="locationdisplay"></p> </p>
-                
+
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
@@ -160,13 +160,34 @@ h2 {
                 <br>
                 <label for="description"><br><b>Description</b></label>
                 <input type="text" placeholder="Describe the problem" name="description" required>
-                    
+
               <!--   <input type="file" name="fileToUpload" id="fileToUpload">
                <input type="submit" value="Upload Image" name="submit">  -->
                 Severity: <br> <small> Low </small><input type="range" name="severity" min="0" max="5"> <small> High</small>
-                
+
                 <label for="location"><b><br><br>Location</b></label>
                 <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
+                <style>
+                                                                input[type=file] {
+                                                                      width: auto;
+                                                                      background-color: green;
+                                                                      color: white;
+                                                                      padding: 14px 20px;
+                                                                      margin: 8px 0;
+                                                                      border: none;
+                                                                      border-radius: 20px;
+                                                                      cursor: pointer;
+                                                                  }
+                                                                input[type=file]:hover{
+                                                                  opacity: 0.8;
+                                                                }
+                                                                </style>
+                <form action="POST">
+                    <center>
+                      <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*">
+                      <p id="ProgressBar"></p>
+                    </center>
+                </form>
 
                 <input type="submit" value="Submit" name="submit">
 
