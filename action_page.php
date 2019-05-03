@@ -9,7 +9,6 @@
 <?php
 
 $target_dir = "uploads/";
-$dest=__DIR__.'/uploads/'.$upload_file_name;
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -42,7 +41,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 //// if everything is ok, try to upload file
 //} else {
 
-    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $dest)) {
+    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         echo "File uploaded";
     } else {
         echo "Sorry, there was an error uploading your file.";
