@@ -106,8 +106,8 @@
 <style>
 h2 {
   position: absolute;
-  left: 100px;
-  top: 150px;
+  left: 1px;
+  top: 1px;
 }
 </style>
 </head>
@@ -118,7 +118,7 @@ h2 {
   </div>
     <div>
             
-            <button onclick="mainApp.logOut()">LogOut</button>
+           <h2><button onclick="mainApp.logOut()">LogOut</button></h2>
 
 
 
