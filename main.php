@@ -17,6 +17,8 @@
 
     <!-- Bootstrap CSS for Grid System -->
 
+    <!-- Sweetalert JS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <style>
             #mapid {
             height: 400px;
@@ -99,19 +101,45 @@
 
             </style>
 </head>
+
+<head>
+<style>
+h2 {
+  position: absolute;
+  left: 10px;
+  top: 340px;
+  z-index: 100;
+}
+.button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 24px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+</style>
+</head>
+
 <body>
   <div class="container">
     <div id="mapid"></div>
   </div>
     <div>
-            <button onclick="mainApp.logOut()">LogOut</button>
+
+          <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
 
 
 
-            <form action="action_page.php" method = "POST" class="form-container">
+            <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
                 <!-- <h1>Login</h1> -->
-                 <p>The Location is </p>
-            <p id="locationdisplay"></p>
+
+                 <p>The Location is <p id="locationdisplay"></p> </p>
+
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
@@ -119,24 +147,46 @@
                 <label for="longitude"><b>Longitude</b></label>
                 <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
 
-                <label for="category"><b>Category<br></b></label>
-                <select>
-                  <optgroup label="category">
+
+                <label><b>Category:<br><b/></label>
+                <select name="category" required>
+                    <option disabled="disabled" selected="selected">---Select Category--</option>
                       <option value="waste">Waste</option>
                       <option value="water">Water</option>
                       <option value="air">Air</option>
                       <option value="sanitation">Sanitation</option>
                       <option value='flood'>Urban Flooding</option>
-                    </optgroup>
                 </select>
                 <br>
-                <label for="description"><b>Description</b></label>
-                <input type="text" placeholder="Description:" name="description" required>
+                <label for="description"><br><b>Description</b></label>
+                <input type="text" placeholder="Describe the problem" name="description" required>
 
-                <label for="location"><b>Location</b></label>
-                <input type="text" placeholder="Location:" name="location" required id="lcn">
+              <!--   <input type="file" name="fileToUpload" id="fileToUpload">
+               <input type="submit" value="Upload Image" name="submit">  -->
+                Severity: <br> <small> Low </small><input type="range" name="severity" min="0" max="5"> <small> High</small>
 
-                <input type="submit" value="submit" name="submit">
+                <label for="location"><b><br><br>Location</b></label>
+                <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
+                <style>
+                                                                input[type=file] {
+                                                                      width: auto;
+                                                    
+                                                                      padding: 14px 20px;
+                                                                      margin: 8px 0;
+                                                                      border: none;
+                                                                      border-radius: 20px;
+                                                                      cursor: pointer;
+                                                                  }
+                                                                input[type=file]:hover{
+                                                                  opacity: 0.8;
+                                                                }
+                                                                </style>
+                <form action="POST">
+                 Upload image: <br> <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+                      <p id="ProgressBar"></p>
+                </form>
+
+                <input type="submit" value="Submit" name="submit">
 
 <!--                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>-->
               </form>
@@ -178,14 +228,25 @@
       document.getElementById("locationdisplay").innerHTML = e.latlng;
       document.getElementById('lat').setAttribute("value", e.latlng.lat);
       document.getElementById('long').setAttribute("value", e.latlng.lng);
+      document.getElementById('lcn').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`).readonly = true;
       }
 
 		function onLocationError(e) {
-		  alert(e.message);
+      swal({
+            icon: 'error',
+            title: 'Oops',
+            text: e.message,
+            button: 'OK',
+      });
 		}
 
         mymap.on('locationerror', onLocationError);
         mymap.on('locationfound', onLocationFound);
+        swal({
+              icon: 'info',
+              text: 'Click anywhere on the map to pinpoint location of the problem you wish to report',
+              button: 'OK',
+        });
 
     // function onLocationFound(e) {
     //     var radius = e.accuracy / 2;
@@ -201,25 +262,41 @@
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
-          //  alert(one);
+           // alert(one);
           //  loc.push(location);
-            alert("Thank you for selecting location. Fill form below!");
+            swal({
+                  icon: 'info',
+                  text: 'Thank you for selecting location. Fill form below!',
+                  button: 'OK',
+            });
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
-          //  alert(res[0]);
         }
         mymap.on('click', onMapClick);
+
+        var category_icon = L.Icon.extend({
+        options: {
+            iconSize: [25, 25]
+        }
+        });
+        var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/67/67780.svg'});
+        var waste = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1/1570.svg'});
+        var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/62/62832.svg'});
+        var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
+        var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1092/1092932.svg'});
+
+
 
     </script>
 </body>
 </html>
 
 <?php
-$servername = "srv-captain--mysqldb-db";
-$username = "root";
-$password = "S0lvesm@lld3ntbig";
+$servername = "localhost";
+$username = "admin";
+$password = "r3apb3n3fit";
 $dbname = "nd_manager";
 
 // Create connection
@@ -229,21 +306,45 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT latitude, longitude from data";
+$sql = "SELECT latitude, longitude, category, description from data";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $floatlat = floatval( $row["latitude"]);
         $floatlng = floatval( $row["longitude"]);
-        echo("<script>L.marker([$floatlat, $floatlng]).addTo(mymap);
+        $cat = $row["category"];
+        $desc = $row["description"];
+        if($cat == 'waste'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
         </script>");
- //    echo("<script> console.log($floatlat); </script>");
+        }
+        if($cat == 'water'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
+        </script>");
+        }
+         if($cat == 'flood'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
+        </script>");
+         }
+        if($cat == 'air'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
+        </script>");
+        }
+        if($cat == 'sanitation'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
+        </script>");
+        }
 
- }
-
+    }
 } else {
     echo "0 results";
 }
+
 $conn->close();
 ?>

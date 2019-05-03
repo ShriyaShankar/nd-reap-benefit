@@ -8,9 +8,10 @@
 </html>
 
 <?php
-$servername = "srv-captain--mysqldb-db";
-$username = "root";
-$password = "S0lvesm@lld3ntbig";
+
+$servername = "localhost";
+$username = "admin";
+$password = "r3apb3n3fit";
 $dbname = "nd_manager";
 $table = "data";
 // Create connection
@@ -27,15 +28,15 @@ else
 
 if(isset($_POST['submit'])){
     echo "Record submitted. ";
-
     $name=$_POST['name'];
     $latitude=$_POST['latitude'];
     $longitude=$_POST['longitude'];
     $description=$_POST['description'];
     $category=$_POST['category'];
     $location=$_POST['location'];
-    $sql = "INSERT INTO data (name, latitude, longitude, category, description, location)
-    VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location')";
+    $severity=$_POST['severity'];
+    $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity)
+    VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Redirecting... ";
@@ -45,7 +46,7 @@ if ($conn->query($sql) === TRUE) {
           text: 'You are a great citizen! Thanks for the submission :)',
           button: 'OK',
           closeOnClickOutside: false
-    }).then(window.location='main.php');</script>");
+    }).then(function(){window.location='main.php'});</script>");
     }
 else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -55,9 +56,10 @@ else {
           text: 'There's an error on our end :(. Contact us!',
           button: 'OK',
           closeOnClickOutside: false
-    }).then(window.location='main.php');</script>");
+    }).then(function(){window.location='main.php'});</script>");
     }
     $conn->close();
 }
+
 
 ?>
