@@ -114,7 +114,7 @@ h2 {
   background-color: #f44336;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 24px;;
   text-align: center;
   text-decoration: none;
   display: inline-block;
