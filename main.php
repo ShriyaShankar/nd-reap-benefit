@@ -106,8 +106,8 @@
 <style>
 h2 {
   position: absolute;
-  left: 20px;
-  top: 300px;
+  left: 10px;
+  top: 320px;
   z-index: 100;
 }
 .button {
@@ -119,7 +119,7 @@ h2 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 3px 1px;
   cursor: pointer;
 }
 </style>
