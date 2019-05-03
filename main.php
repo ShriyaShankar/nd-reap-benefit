@@ -137,9 +137,9 @@ h2 {
 
             <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
                 <!-- <h1>Login</h1> -->
-                <span style="white-space: nowrap;">43,560</span>
-                 <p>The Location is <p id="locationdisplay"></p> </p>
                 
+                <p>The Location is </p>
+                <span style="white-space: nowrap;">id="locationdisplay"</span>
                 <label for="identifier" id="identifier"></label>
                 <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
                 <label for="latitude"><b>Latitude</b></label>
