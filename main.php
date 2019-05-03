@@ -137,6 +137,7 @@ h2 {
 
             <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
                 <!-- <h1>Login</h1> -->
+                <span style="white-space: nowrap;">43,560</span>
                  <p>The Location is <p id="locationdisplay"></p> </p>
                 
                 <label for="identifier" id="identifier"></label>
