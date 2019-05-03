@@ -160,8 +160,8 @@ h2 {
                 <label for="description"><br><b>Description</b></label>
                 <input type="text" placeholder="Describe the problem" name="description" required>
                     
-                <input type="file" name="fileToUpload" id="fileToUpload">
-         <!--       <input type="submit" value="Upload Image" name="submit">  -->
+              <!--   <input type="file" name="fileToUpload" id="fileToUpload">
+               <input type="submit" value="Upload Image" name="submit">  -->
                 Severity: <input type="range" name="severity" min="0" max="5">
                 
                 <label for="location"><b>Location</b></label>
