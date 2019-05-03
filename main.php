@@ -107,7 +107,7 @@
 h2 {
   position: absolute;
   left: 20px;
-  top: 500px;
+  top: 300px;
   z-index: 100;
 }
 .button {
