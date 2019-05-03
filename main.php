@@ -110,6 +110,18 @@ h2 {
   top: -20px;
   z-index: 100;
 }
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 </style>
 </head>
     
@@ -119,7 +131,7 @@ h2 {
   </div>
     <div>
             
-           <h2><button onclick="mainApp.logOut()">LogOut</button></h2>
+          <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
 
 
 
