@@ -203,6 +203,10 @@ h2 {
     
 <div>
     <IMG STYLE="position:absolute; LEFT:500px; TOP:470px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:520px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1/1570.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:570px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/62/62832.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:620px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1472/1472279.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:670px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1092/1092932.svg">
     
     
 </div>
