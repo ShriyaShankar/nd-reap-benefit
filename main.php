@@ -182,7 +182,7 @@ h2 {
                                                                 }
                                                                 </style>
                 <form action="POST">
-                 Upload image: <br> <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+                 Upload image: <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
                       <p id="ProgressBar"></p>
                 </form>
 
