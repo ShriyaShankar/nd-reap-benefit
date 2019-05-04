@@ -202,11 +202,11 @@ h2 {
 </div>
     
 <div>
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:500px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:650px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1/1570.svg">
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:800px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/62/62832.svg">
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:950px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1472/1472279.svg">
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:1100px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1092/1092932.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:450px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:550px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1/1570.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:650px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/62/62832.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:750px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1472/1472279.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:850px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1092/1092932.svg">
     
     
 </div>
