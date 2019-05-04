@@ -200,10 +200,12 @@ h2 {
 <!-- <div class="form-popup" id="myForm"> -->
 
 </div>
+
     
+
 <div>
     <IMG STYLE="position:absolute; LEFT:500px; TOP:450px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:550px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1/1570.svg" ALIGN="right"><p>Waste</p>
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:550px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1/1570.svg" ALIGN="right"><li>Free contact form</li>
     <IMG STYLE="position:absolute; LEFT:500px; TOP:650px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/62/62832.svg">
     <IMG STYLE="position:absolute; LEFT:500px; TOP:750px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1472/1472279.svg">
     <IMG STYLE="position:absolute; LEFT:500px; TOP:850px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1092/1092932.svg">
