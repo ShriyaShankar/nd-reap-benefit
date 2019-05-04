@@ -202,8 +202,8 @@ h2 {
 </div>
 
   <div style = "position:absolute;left:600;top:550;">
-         This div has relative positioning.
-      </div>   
+         <p>This div has relative positioning.</p>
+</div>   
 
 <div>
     <IMG STYLE="position:absolute; LEFT:500px; TOP:450px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
