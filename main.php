@@ -202,7 +202,7 @@ h2 {
 </div>
     
 <div>
-    <IMG STYLE="position:absolute; LEFT:500px; TOP:600px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:400px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg">
     
     
 </div>
