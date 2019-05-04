@@ -200,6 +200,12 @@ h2 {
 <!-- <div class="form-popup" id="myForm"> -->
 
 </div>
+    
+<div>
+    <IMG STYLE="position:absolute; LEFT:500px; TOP:400px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/67/67780.svg'>
+    
+    
+</div>
 
     <script src="firebase.js"></script>
     <script src="main.js"></script>
