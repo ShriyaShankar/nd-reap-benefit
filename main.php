@@ -160,8 +160,6 @@ h2 {
                       <option value='flood'>Urban Flooding</option>
                 </select>
                 <br>
-                <label for="description"><br><b>Description</b></label>
-                <input type="text" placeholder="Describe the problem" name="description" required>
 
               <!--   <input type="file" name="fileToUpload" id="fileToUpload">
                <input type="submit" value="Upload Image" name="submit">  -->
@@ -188,6 +186,9 @@ h2 {
                 <p id="ProgressBar"></p>
                 </form>
                 <input type="url" hidden name="floodImageURL" id="floodImageURL">
+
+                <label for="description"><br><b>Description</b></label>
+                <input type="text" placeholder="Describe the problem" name="description" required>
 
                 <input type="submit" value="Submit" name="submit">
 
@@ -269,6 +270,8 @@ h2 {
 
         function onMapClick(e) {
             var location = e.latlng;
+            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            L.circle(e.latlng, radius).addTo(mymap);
             var loc = String(location);
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
