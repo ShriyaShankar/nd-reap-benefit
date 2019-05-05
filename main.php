@@ -118,7 +118,7 @@ h2 {
 }
 h3 {
   position: absolute;
-  left: 150px;
+  left: 80px;
   top: 340px;
   z-index: 100;
 }
@@ -145,7 +145,7 @@ h3 {
     <div id="mapid"></div>
       
   </div>
-    <div class="container">
+   <!-- <div class="container">
   <!-- Trigger the modal with a button -->
         <h3> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> </h3>
 
@@ -170,7 +170,7 @@ h3 {
     </div>
   </div>
   
-</div>
+<!-- </div>
     <div>
 
           <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
