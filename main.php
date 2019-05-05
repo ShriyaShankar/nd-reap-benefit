@@ -187,7 +187,7 @@ h2 {
                 Upload Image: <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
                 <p id="ProgressBar"></p>
                 </form>
-                <input type="hidden" name="floodImageURL" id="floodImageURL">
+                <input type="url" hidden name="floodImageURL" id="floodImageURL">
 
                 <input type="submit" value="Submit" name="submit">
 
