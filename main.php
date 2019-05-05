@@ -325,6 +325,7 @@ h3 {
             //var location = e.latlng;
             //var loc = String(location);
             storeloc = e.latlng;
+            console.log(storeloc);
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
