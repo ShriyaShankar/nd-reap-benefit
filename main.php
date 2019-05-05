@@ -150,10 +150,11 @@ h3 {
     <div id="mapid"></div>
 
 
-<div class="container">
+<div class="w3-container">
   <!-- Trigger the modal with a button -->
  <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>
-
+ <img src = "https://image.flaticon.com/icons/svg/67/67780.svg" style = "width:30%">
+    
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
