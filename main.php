@@ -279,6 +279,7 @@ h3 {
     <script src="firebase.js"></script>
     <script src="main.js"></script>
     <script>
+        var storeloc;
         var mymap = L.map('mapid'), infoWindow;
       //  mymap.locate({setView: true, maxZoom: 18});
             // L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -332,8 +333,10 @@ h3 {
 
 
         function onMapClick(e) {
-            var location = e.latlng;
-            var loc = String(location);
+            //var location = e.latlng;
+            //var loc = String(location);
+            storeloc = e.latlng;
+            console.log(storeloc);
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
             var res = one + "," + two;
@@ -345,10 +348,10 @@ h3 {
                   button: 'OK',
             });
             // L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup().closePopopUnClick();
+            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
 
             L.circle(e.latlng, radius).addTo(mymap);
-            document.getElementById('locationdisplay').innerHTML = location;
+            document.getElementById('locationdisplay').innerHTML = storeloc;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
             document.getElementById('lcn').value= res;
