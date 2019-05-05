@@ -281,7 +281,9 @@ h2 {
                   text: 'Thank you for selecting location. Fill form below!',
                   button: 'OK',
             });
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            // L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup().closePopopUnClick();
+
             L.circle(e.latlng, radius).addTo(mymap);
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
