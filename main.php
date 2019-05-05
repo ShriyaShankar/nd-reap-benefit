@@ -166,8 +166,8 @@ h3 {
               <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:0px;" src = "https://image.flaticon.com/icons/svg/1/1570.svg" width = "50" height = "50" >
                <p style = "margin-top: -10px";></p>
                <p>Let us try to say goodbye to Garbage City and help Bengaluru go back to being Garden City by reporting garbage accumulation and dump sites in our  neighbourhood </p>
-               <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:5px;" src = "https://image.flaticon.com/icons/svg/67/67780.svg" width = "50" height = "50" >
-               <p style = "margin-top: -10px";></p>
+               <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:1-px;" src = "https://image.flaticon.com/icons/svg/67/67780.svg" width = "50" height = "50" >
+               
                <p>Water</p>
             </p>
         
