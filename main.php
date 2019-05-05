@@ -152,7 +152,8 @@ h3 {
 
 <div class="w3-container">
   <!-- Trigger the modal with a button -->
- <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>    
+  <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">Category Key</button></h3>
+     
   <!-- Modal -->
     
             <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
