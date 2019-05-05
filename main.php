@@ -153,7 +153,7 @@ h3 {
     
 <div class="container">
   <!-- Trigger the modal with a button -->
- <h3> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> </h3>
+ <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Open Modal</button> </h3>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
@@ -169,7 +169,7 @@ h3 {
           <p>Some text in the modal.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="button" data-dismiss="modal">Close</button>
         </div>
       </div>
       
