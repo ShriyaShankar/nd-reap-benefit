@@ -96,7 +96,7 @@ task.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
   // Upload completed successfully, now we can get the download URL
   task.snapshot.ref.getDownloadURL().then(function(downloadURL) {
     console.log('File available at', downloadURL);
-    foundimageURL = downloadURL;
+    floodImageURL = downloadURL;
 
   });
 });
