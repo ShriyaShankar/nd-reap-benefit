@@ -171,7 +171,7 @@ h3 {
           <p>Let us try to say goodbye to Garbage City and help Bengaluru go back to being Garden City by reporting garbage accumulation and dump sites in our  neighbourhood </p>
            
           <p></p>
-          <p style = "margin-top: -10px";></p>
+          <p style = "margin-top: 60px";></p>
           <p> Water </p>
             
         </div>
