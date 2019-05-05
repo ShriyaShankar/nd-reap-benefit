@@ -118,7 +118,7 @@ h2 {
 }
 h3 {
   position: absolute;
-  left: 80px;
+  left: 130px;
   top: 340px;
   z-index: 100;
 }
@@ -145,32 +145,9 @@ h3 {
     <div id="mapid"></div>
       
   </div>
-    <div class="container">
-  <!-- Trigger the modal with a button -->
-        <h3> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> </h3>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
     
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  
-</div>
+
+    
     <div>
 
           <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
