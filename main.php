@@ -154,9 +154,9 @@ h3 {
 
     
     <div>
-        <h3> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable"></h3>
+        <h3> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
   Launch demo modal
-</button>
+</button></h3>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
