@@ -152,9 +152,7 @@ h3 {
 
 <div class="w3-container">
   <!-- Trigger the modal with a button -->
- <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>
- <img src = "https://image.flaticon.com/icons/svg/67/67780.svg" style = "width:30%">
-    
+ <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>    
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
@@ -166,6 +164,7 @@ h3 {
           <h4 class="modal-title">Learn more about the categories</h4>
         </div>
         <div class="modal-body">
+          <img src = "https://image.flaticon.com/icons/svg/67/67780.svg" style = "width:30%">
           <p>Waste: </p>
         </div>
         <div class="modal-footer">
