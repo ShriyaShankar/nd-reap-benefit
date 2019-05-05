@@ -164,9 +164,9 @@ h3 {
           <h4 class="modal-title">Learn more about the categories</h4>
         </div>
         <div class="modal-body">
-          <p><img style = "padding:0 5px; float: left;" src = "https://image.flaticon.com/icons/svg/67/67780.svg" width = "50" height = "50"></p>
+          <p><img style = "padding:0 5px; float: left;" src = "https://image.flaticon.com/icons/svg/1/1570.svg" width = "50" height = "50"></p>
             <p style = "margin-top: 20px;"></p>
-          <p>Waste: </p>
+          <p>Let us try to say goodbye to Garbage City and help Bengaluru go back to being Garden City by reporting garbage accumulation and dump sites in our  neighbourhood </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="button" data-dismiss="modal">Close</button>
