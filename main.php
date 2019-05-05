@@ -270,8 +270,6 @@ h2 {
 
         function onMapClick(e) {
             var location = e.latlng;
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-            L.circle(e.latlng, radius).addTo(mymap);
             var loc = String(location);
             var one = Math.round(e.latlng.lat * 100000)/100000;
             var two = Math.round(e.latlng.lng * 100000)/100000;
@@ -283,6 +281,8 @@ h2 {
                   text: 'Thank you for selecting location. Fill form below!',
                   button: 'OK',
             });
+            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            L.circle(e.latlng, radius).addTo(mymap);
             document.getElementById('locationdisplay').innerHTML = location;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
