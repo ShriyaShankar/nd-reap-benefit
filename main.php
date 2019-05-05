@@ -116,6 +116,12 @@ h2 {
   top: 340px;
   z-index: 100;
 }
+h3 {
+  position: absolute;
+  left: 150px;
+  top: 340px;
+  z-index: 100;
+}
 .button {
   background-color: #f44336;
   border: none;
@@ -140,9 +146,8 @@ h2 {
       
   </div>
     <div class="container">
-  <h2>Modal Example</h2>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+        <h3> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> </h3>
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
