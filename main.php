@@ -150,16 +150,14 @@ h3 {
     <div id="mapid"></div>
 
 
-<div class="w3-container">
+
   <!-- Trigger the modal with a button -->
   <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">Category Key</button></h3>
      
-  <!-- Modal -->
-    
             <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                     <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Learn more about the categories</h4>
         </div>
@@ -181,7 +179,7 @@ h3 {
     </div>
   </div>
 
-</div>
+
 
     <div>
 
