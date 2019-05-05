@@ -164,7 +164,8 @@ h3 {
           <h4 class="modal-title">Learn more about the categories</h4>
         </div>
         <div class="modal-body">
-          <img src = "https://image.flaticon.com/icons/svg/67/67780.svg" style = "width:5%">
+          <p><img style = "padding:0 15px; float: left;" src = "https://image.flaticon.com/icons/svg/67/67780.svg" style = "width:5%"></p>
+            <p style = "margin-top: 20px;"></p>
           <p>Waste: </p>
         </div>
         <div class="modal-footer">
