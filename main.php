@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
-    
+
   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
-    
-    
+
+
    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
@@ -112,8 +112,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
-    
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 <style>
 h2 {
   position: absolute;
@@ -145,12 +145,10 @@ h3 {
 <body>
     </div>
 
-    
-  <div class="container">
+
     <div id="mapid"></div>
-      
-  </div>
-    
+
+
 <div class="container">
   <!-- Trigger the modal with a button -->
  <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>
@@ -158,7 +156,7 @@ h3 {
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -172,12 +170,12 @@ h3 {
           <button type="button" class="button" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
-  
+
 </div>
-    
+
     <div>
 
 
@@ -189,32 +187,41 @@ h3 {
                 <!-- <h1>Login</h1> -->
 
                  <p>The Location is <p id="locationdisplay"></p> </p>
+                <div class="form-group">
+                  <label for="identifier" id="identifier"></label>
+                  <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required />
+                </div>
+                <div class="form-group">
+                  <label for="latitude"><b>Latitude</b></label>
+                  <input type="text" placeholder="Enter latitude" name="latitude" required id="lat" />
+                </div>
+                <div class="form-group">
+                  <label for="longitude"><b>Longitude</b></label>
+                  <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
+                </div>
 
-                <label for="identifier" id="identifier"></label>
-                <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required>
-                <label for="latitude"><b>Latitude</b></label>
-                <input type="text" placeholder="Enter latitude" name="latitude" required id="lat">
-                <label for="longitude"><b>Longitude</b></label>
-                <input type="text" placeholder="Enter longitude" name="longitude" required id="long">
-
-
-                <label><b>Category:<br><b/></label>
-                <select name="category" required>
-                    <option disabled="disabled" selected="selected">---Select Category--</option>
-                      <option value="waste">Waste</option>
-                      <option value="water">Water</option>
-                      <option value="air">Air</option>
-                      <option value="sanitation">Sanitation</option>
-                      <option value='flood'>Urban Flooding</option>
-                </select>
-                <br>
-
+                <div class="form-group">
+                  <label><b>Category:<br><b/></label>
+                  <select name="category" required>
+                      <option disabled="disabled" selected="selected">---Select Category--</option>
+                        <option value="waste">Waste</option>
+                        <option value="water">Water</option>
+                        <option value="air">Air</option>
+                        <option value="sanitation">Sanitation</option>
+                        <option value='flood'>Urban Flooding</option>
+                  </select>
+                  <br>
+                </div>
               <!--   <input type="file" name="fileToUpload" id="fileToUpload">
                <input type="submit" value="Upload Image" name="submit">  -->
-                Severity: <br> <small> Low </small><input type="range" name="severity" min="0" max="5"> <small> High</small>
+               <div class="form-group">
+                Severity: <br> <p class="text-left" style="display:inline !important;"> Low </p> <p class="text-right" style="display:inline !important; float:right !important;">High</p><input type="range" name="severity" min="0" max="5" />
+              </div>
 
+              <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
                 <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
+              </div>
                 <style>
                                                                 input[type=file] {
                                                                       width: auto;
@@ -228,23 +235,27 @@ h3 {
                                                                 input[type=file]:hover{
                                                                   opacity: 0.8;
                                                                 }
-                                                                </style>
+                </style>
+                <div class="form-group">
                 <form action="POST">
-                Upload Image: <input class="form-control" type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+                Upload Image: <input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
                 <p id="ProgressBar"></p>
                 </form>
+                </div>
                 <input type="url" hidden name="floodImageURL" id="floodImageURL">
 
-                <label for="description"><br><b>Description</b></label>
-                <input type="text" placeholder="Describe the problem" name="description" required>
+                <div class="form-group">
+                  <label for="description"><br><b>Description</b></label>
+                  <input type="text" placeholder="Describe the problem" name="description" required>
+                </div>
 
-                <input type="submit" value="Submit" name="submit">
+                <input class="btn btn-success" type="submit" value="Submit" name="submit">
 
 <!--                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>-->
               </form>
-        
-        
-        
+
+
+
 
     </div>
 
@@ -263,7 +274,7 @@ h3 {
     <IMG STYLE="position:absolute; LEFT:500px; TOP:850px; WIDTH:50px; HEIGHT:50px" SRC="https://image.flaticon.com/icons/svg/1092/1092932.svg">
 
 </div> -->
-    
+
 
     <script src="firebase.js"></script>
     <script src="main.js"></script>
