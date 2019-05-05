@@ -35,7 +35,7 @@ if(isset($_POST['submit'])){
     $category=$_POST['category'];
     $location=$_POST['location'];
     $severity=$_POST['severity'];
-    $FloodImageURL = echo("<script>floodImageURL</script>");
+    $FloodImageURL = $_POST['floodImageURL'];
     $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
     VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL')";
 
