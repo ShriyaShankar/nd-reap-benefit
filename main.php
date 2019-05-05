@@ -154,17 +154,15 @@ h3 {
   <!-- Trigger the modal with a button -->
  <h3> <button type="button" class="button" data-toggle="modal" data-target="#myModal">Category Key</button> </h3>    
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-            
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Learn more about the categories</h4>
+        </div>
+        <div class="modal-body">            
           <p><img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:0px;" src = "https://image.flaticon.com/icons/svg/1/1570.svg" width = "50" height = "50" ></p>
           <p style = "margin-top: -10px";></p>
           <p>Let us try to say goodbye to Garbage City and help Bengaluru go back to being Garden City by reporting garbage accumulation and dump sites in our  neighbourhood </p>
