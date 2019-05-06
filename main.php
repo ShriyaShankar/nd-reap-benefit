@@ -139,8 +139,32 @@ h3 {
   font-size: 16px;
   margin: 3px 1px;
   cursor: pointer;
+} 
+
+fieldset {
+  overflow: hidden
 }
-</style>
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 2px 1em 0 0;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+    
+ </style>
 </head>
 
 <body>
@@ -225,9 +249,17 @@ h3 {
                 </div>
               <!--   <input type="file" name="fileToUpload" id="fileToUpload">
                <input type="submit" value="Upload Image" name="submit">  -->
-               <div class="form-group">
+            <!--   <div class="form-group">
                 Severity: <br> <p class="text-left" style="display:inline !important;"> Low </p> <p class="text-right" style="display:inline !important; float:right !important;">High</p><input type="range" name="severity" min="0" max="5" />
-              </div>
+              </div> -->
+                    <fieldset>
+                      <div class="some-class">
+                        <input type="radio" class="radio" name="x" value="y" id="y" />
+                        <label for="y">Thing 1</label>
+                        <input type="radio" class="radio" name="x" value="z" id="z" />
+                        <label for="z">Thing 2</label>
+                      </div>
+                    </fieldset>
 
               <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
