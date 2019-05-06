@@ -167,7 +167,11 @@ h3 {
         </button>
       </div>
       <div class="modal-body">
-        abcd<br>efg<br>hijk<br>lmnop<br>qrst
+        Air: <br>
+        Sanitation: <br>
+        Urban Flooding: <br>
+        Waste: Let's say goodbye to Garbage City and help Bengaluru go back to being the Garden City by reporting garbage accumulated regions and dump sites in our neighbourhood<br>
+        Water: <br>
         
       </div>
       <div class="modal-footer">
