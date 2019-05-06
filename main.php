@@ -146,7 +146,7 @@ fieldset {
 }
 
 .some-class {
-  float: right;
+  float: left;
   clear: none;
 }
 
@@ -255,9 +255,11 @@ input.radio {
                <fieldset>
                   <div class="some-class">
                     <input type="radio" class="radio" name="x" value="y" id="y" />
-                    <label for="y">Thing 1</label>
+                    <label for="y">Mild</label>
                     <input type="radio" class="radio" name="x" value="z" id="z" />
-                    <label for="z">Thing 2</label>
+                    <label for="z">Moderate</label>
+                    <input type="radio" class="radio" name="x" value="p" id="p" />
+                    <label for="p">Severe</label>
                   </div>
                 </fieldset> 
 
