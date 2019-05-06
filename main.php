@@ -146,7 +146,7 @@ fieldset {
 }
 
 .some-class {
-  float: left;
+  float: right;
   clear: none;
 }
 
@@ -154,7 +154,7 @@ label {
   float: left;
   clear: none;
   display: block;
-  padding: 2px 1em 0 0;
+  padding: 0px 1em 0 0;
 }
 
 input[type=radio],
