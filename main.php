@@ -159,7 +159,7 @@ label {
 
 input[type=radio],
 input.radio {
-  float: right;
+  float: left;
   clear: none;
   margin: 2px 0 0 2px;
 }
