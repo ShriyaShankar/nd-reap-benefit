@@ -151,36 +151,31 @@ h3 {
 
 
 
-  <!-- Trigger the modal with a button -->
-  <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">Category Key</button></h3>
-     
-            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                     <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Learn more about the categories</h4>
-        </div>
-        <div class="modal-body">            
-          <p>
-              <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:0px;" src = "https://image.flaticon.com/icons/svg/1/1570.svg" width = "50" height = "50" >
-               <p style = "margin-top: -10px";></p>
-               <p>Let us try to say goodbye to Garbage City and help Bengaluru go back to being Garden City by reporting garbage accumulation and dump sites in our  neighbourhood </p>
-               <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:0px;" src = "https://image.flaticon.com/icons/svg/67/67780.svg" width = "50" height = "50" >
-               <p>Water</p>
-              <!-- <img style = "padding: 0 5px; float: left; position:relative; LEFT:0px; TOP:0px;" src = "https://image.flaticon.com/icons/svg/62/62832.svg" width = "50" height = "50" >
-               <p>Air</p> -->
-            </p>
-        
-            
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="button" data-dismiss="modal">Close</button>
-        </div>
-      </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+  Launch demo modal
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        abcd
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
+</div>
 
 
 
