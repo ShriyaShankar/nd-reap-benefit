@@ -154,7 +154,7 @@ label {
   float: left;
   clear: none;
   display: block;
-  padding: 2px 1em 0 0;
+  padding: 10px 1em 0 0;
 }
 
 input[type=radio],
