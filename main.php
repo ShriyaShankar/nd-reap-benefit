@@ -257,7 +257,7 @@ input.radio {
                <fieldset>
                   <div class="some-class">
                     <input type="radio" class="radio" name="x" value="y" id="y" />
-                    <label for="y">Mild</label>
+                    <label for="y"><br>Mild</label>
                     <input type="radio" class="radio" name="x" value="z" id="z" />
                     <label for="z">Moderate</label>
                     <input type="radio" class="radio" name="x" value="p" id="p" />
