@@ -152,9 +152,9 @@ h3 {
 
 
 <!-- Button trigger modal -->
-<button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
+<h2><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
   Category Key
-</button>
+</button></h2>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
