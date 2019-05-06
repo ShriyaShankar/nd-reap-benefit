@@ -157,11 +157,11 @@ h3 {
 </button></h3>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalScrollable" tabindex="1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle"><b><b>Learn more about the categories</b></b></h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle"><b><b>Let us understand the categories better</b></b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
