@@ -151,10 +151,10 @@ fieldset {
 }
 
 label {
-  float: left;
+  float: right;
   clear: none;
   display: block;
-  padding: 0px 1em 0 0;
+  padding: -2px 1em 0 0;
 }
 
 input[type=radio],
