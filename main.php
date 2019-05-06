@@ -141,29 +141,7 @@ h3 {
   cursor: pointer;
 } 
 
-fieldset {
-  overflow: hidden
-}
-
-.some-class {
-  float: left;
-  clear: none;
-}
-
-label2 {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 2px 1em 0 0;
-}
-
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 2px 0 0 2px;
-}
-    
+ 
  </style>
 </head>
 
