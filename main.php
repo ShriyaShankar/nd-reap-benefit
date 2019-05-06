@@ -257,11 +257,11 @@ input.radio {
               
                    <label><b><br>Status of Problem: <b/><br></label>
                   <div class="some-class">
-                    <input type="radio" class="radio" name="x" value="y" id="y" />
+                    <input type="radio" class="radio" name="severity" value="mild" id="y" />
                     <label for="y">Mild</label>
-                    <input type="radio" class="radio" name="x" value="z" id="z" />
+                    <input type="radio" class="radio" name="severity" value="moderate" id="z" />
                     <label for="z">Moderate</label>
-                    <input type="radio" class="radio" name="x" value="p" id="p" />
+                    <input type="radio" class="radio" name="severity" value="severe" id="p" />
                     <label for="p">Severe</label>
                   </div>
                
