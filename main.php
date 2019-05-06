@@ -152,8 +152,8 @@ h3 {
 
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-  Launch demo modal
+<button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
+  Category Key
 </button>
 
 <!-- Modal -->
