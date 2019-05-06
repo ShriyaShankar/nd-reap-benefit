@@ -252,7 +252,7 @@ input.radio {
             <!--   <div class="form-group">
                 Severity: <br> <p class="text-left" style="display:inline !important;"> Low </p> <p class="text-right" style="display:inline !important; float:right !important;">High</p><input type="range" name="severity" min="0" max="5" />
               </div> -->
-                <label><br><b>Status of Problem: <br><b/></label>
+                <label><br><b>Status of Problem: <b/><br></label>
                     <br>
                <fieldset>
                   <div class="some-class">
