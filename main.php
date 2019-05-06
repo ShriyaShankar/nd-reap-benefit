@@ -141,7 +141,29 @@ h3 {
   cursor: pointer;
 } 
 
- 
+fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label2 {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 2px 1em 0 0;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 2px 0 0 2px;
+}
+    
  </style>
 </head>
 
@@ -230,7 +252,14 @@ h3 {
             <!--   <div class="form-group">
                 Severity: <br> <p class="text-left" style="display:inline !important;"> Low </p> <p class="text-right" style="display:inline !important; float:right !important;">High</p><input type="range" name="severity" min="0" max="5" />
               </div> -->
-                
+               <fieldset>
+                  <div class="some-class">
+                    <input type="radio" class="radio" name="x" value="y" id="y" />
+                    <label for="y">Thing 1</label>
+                    <input type="radio" class="radio" name="x" value="z" id="z" />
+                    <label for="z">Thing 2</label>
+                  </div>
+                </fieldset> 
 
               <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
