@@ -254,7 +254,7 @@ input.radio {
               </div> -->
                 
             
-               <fieldset>
+              
                    <label><b>Status of Problem: <b/><br></label>
                   <div class="some-class">
                     <input type="radio" class="radio" name="x" value="y" id="y" />
@@ -264,7 +264,7 @@ input.radio {
                     <input type="radio" class="radio" name="x" value="p" id="p" />
                     <label for="p">Severe</label>
                   </div>
-                </fieldset> 
+               
 
               <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
