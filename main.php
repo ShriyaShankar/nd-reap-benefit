@@ -150,7 +150,7 @@ fieldset {
   clear: none;
 }
 
-label2 {
+label {
   float: left;
   clear: none;
   display: block;
