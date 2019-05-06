@@ -161,7 +161,7 @@ input[type=radio],
 input.radio {
   float: left;
   clear: none;
-  margin: 10px 0 0 2px;
+  margin: 40px 0 0 2px;
 }
     
  </style>
