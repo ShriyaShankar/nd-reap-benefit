@@ -167,8 +167,7 @@ h3 {
         </button>
       </div>
       <div class="modal-body">
-        abcd
-        efg
+        abcd<br>efg<br>hijk<br>lmnop<br>qrst
         
       </div>
       <div class="modal-footer">
