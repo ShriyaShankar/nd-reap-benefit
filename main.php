@@ -384,6 +384,8 @@ input.radio {
             //var location = e.latlng;
             //var loc = String(location);
             var radius = e.accuracy / 2;
+            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            L.circle(e.latlng, radius).addTo(mymap);
             storeloc = e.latlng;
             console.log(storeloc);
             var one = Math.round(e.latlng.lat * 100000)/100000;
@@ -397,9 +399,6 @@ input.radio {
                   button: 'OK',
             });
             // L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-
-            L.circle(e.latlng, radius).addTo(mymap);
             document.getElementById('locationdisplay').innerHTML = storeloc;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
