@@ -383,9 +383,9 @@ input.radio {
         function onMapClick(e) {
             //var location = e.latlng;
             //var loc = String(location);
-            var radius = e.accuracy / 2;
-            L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
-            L.circle(e.latlng, radius).addTo(mymap);
+            //var radius = e.accuracy / 2;
+            //L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            //L.circle(e.latlng, radius).addTo(mymap);
             storeloc = e.latlng;
             console.log(storeloc);
             var one = Math.round(e.latlng.lat * 100000)/100000;
