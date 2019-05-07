@@ -139,7 +139,7 @@ h3 {
   font-size: 16px;
   margin: 3px 1px;
   cursor: pointer;
-} 
+}
 
 fieldset {
   overflow: hidden
@@ -163,7 +163,7 @@ input.radio {
   clear: none;
   margin: 10px 10 0 2px;
 }
-    
+
  </style>
 </head>
 
@@ -185,25 +185,25 @@ input.radio {
   <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle"><b><b>Let us understand the categories better</b></b></h5>
+        <h5 class="modal-title" id="exampleModalScrollableTitle">Let us understand the categories better</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <b>Air: </b>Air pollution is a mix of particles and gases that can reach harmful concentrations both outside and indoors. Its effects can range from higher disease risks to rising temperatures. Soot, smoke, mold, pollen, methane, and carbon dioxide are a just few examples of common pollutants. <br><br>
-          
+
         <b>Sanitation: </b>It refers to the provision of facilities and services for the safe disposal of human urine and faeces.  Lack of adequate means of disposing waste is a growing nuisance for heavily populated areas, carrying the risk of infectious disease. <br><br>
-          
+
         <b>Urban Flooding: </b>Urban flooding is specific in the fact that the cause is a lack of drainage in an urban area. As there is little open soil that can be used for water storage nearly all the precipitation needs to be transport to surface water or the sewage system. High intensity rainfall can cause flooding when the city sewage system and draining canals do not have the necessary capacity to drain away the amounts of rain that are falling.<br><br>
-              
+
         <b>Waste: </b>Let's say goodbye to Garbage City and help Bengaluru go back to being the Garden City by reporting garbage accumulated regions and dump sites in our neighbourhood.<br><br>
-          
+
         <b>Water: </b>Water pollution occurs when toxic substances enter water bodies such as lakes, rivers, oceans and so on, getting dissolved in them, lying suspended in the water or depositing on the bed. This degrades the quality of water.<br><br>
-        
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><span aria-hidden="true">&times;</span> Close</button>
       </div>
     </div>
   </div>
@@ -252,9 +252,9 @@ input.radio {
             <!--   <div class="form-group">
                 Severity: <br> <p class="text-left" style="display:inline !important;"> Low </p> <p class="text-right" style="display:inline !important; float:right !important;">High</p><input type="range" name="severity" min="0" max="5" />
               </div> -->
-                
-            
-              
+
+
+
                    <label><b><br>Status of Problem: <b/><br></label>
                   <div class="some-class">
                     <input type="radio" class="radio" name="severity" value="mild" id="y" />
@@ -264,7 +264,7 @@ input.radio {
                     <input type="radio" class="radio" name="severity" value="severe" id="p" />
                     <label for="p">Severe</label>
                   </div>
-               
+
 
               <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
