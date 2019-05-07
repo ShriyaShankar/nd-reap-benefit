@@ -268,7 +268,7 @@ input.radio {
 
               <div class="form-group">
                 <label for="location"><b><br><br>Location</b></label>
-                <input type="text" placeholder="<br>Location:" name="location" required id="lcn">
+                <input type="text" placeholder="Location" readonly name="location" required id="lcn">
               </div>
                 <style>
                                                                 input[type=file] {
@@ -352,7 +352,7 @@ input.radio {
       document.getElementById("locationdisplay").innerHTML = e.latlng;
       document.getElementById('lat').setAttribute("value", e.latlng.lat);
       document.getElementById('long').setAttribute("value", e.latlng.lng);
-      document.getElementById('lcn').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`).readonly = true;
+      document.getElementById('lcn').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`);
       }
 
 		function onLocationError(e) {
@@ -396,6 +396,7 @@ input.radio {
                   button: 'OK',
             });
             // L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
+            var radius = e.accuracy / 2;
             L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
 
             L.circle(e.latlng, radius).addTo(mymap);
