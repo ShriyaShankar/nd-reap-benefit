@@ -472,6 +472,11 @@ if ($result->num_rows > 0) {
         marker.bindPopup(\"$desc\");
         </script>");
         }
+        if($cat == 'tree'){
+        echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
+        marker.bindPopup(\"$desc\");
+        </script>");
+        }
 
     }
 } else {
