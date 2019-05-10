@@ -244,6 +244,7 @@ input.radio {
                         <option value="air">Air</option>
                         <option value="sanitation">Sanitation</option>
                         <option value='flood'>Urban Flooding</option>
+                        <option value='tree'>Fallen Tree</option>
                   </select>
                   <br>
                 </div>
@@ -416,6 +417,7 @@ input.radio {
         var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/62/62832.svg'});
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1092/1092932.svg'});
+        var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/46/46564.svg'});
 
 
 
