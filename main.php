@@ -124,13 +124,13 @@ h2 {
 }
 h3 {
   position: absolute;
-  left: 130px;
+  left: 110px;
   top: 340px;
   z-index: 100;
 }
 h4 {
   position: absolute;
-  left: 280px;
+  left: 260px;
   top: 340px;
   z-index: 100;
 }   
