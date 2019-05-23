@@ -255,9 +255,8 @@ input.radio {
 </div>
 
 <div>
-<h2>View based on category</h2>
 <div class="dropdown">
-  <button id="myBtn" class="dropbtn">Dropdown</button>
+ <h4> <button id="myBtn" class="dropbtn">View based on category</button> </h4>
   <div id="myDropdown" class="dropdown-content">
     <a href="#home">Air</a>
     <a href="#about">Waste</a>
