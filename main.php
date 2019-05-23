@@ -1,3 +1,5 @@
+<!-- This is the file executed after the user logs in -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -125,6 +127,7 @@
         }
         
         /* Provides padding and makes the keys red and uniform */
+        
         .button {
         background-color: #f44336;
         border: none;

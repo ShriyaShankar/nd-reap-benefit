@@ -1,39 +1,39 @@
+<!-- This is the code that is exectued first when a user enters our URL -->
+
 <!DOCTYPE html>
 <html>
-<head>
-            <!-- Global site tag (gtag.js) - Google Analytics -->
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39359257-2"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-39359257-2');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-39359257-2');
         </script>
 
-    <meta charset="utf-8">
-	<meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ND Manager Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ND Manager Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
 
-<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-<script src="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.6.0/firebaseui.css" />
+    </head>
     
-</head>
-<body>
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-     Your app may use that space for branding, controls and other customizations.-->
-    <h1><b>Welcome</b></h1>
-    <p>Thank you for wanting to contribute local data to your community</p>
-    <br>
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader">Loading...</div>
-
-    <script src="firebase.js"></script>
-    <script src="login.js"></script>
-</body>
+    <body>
+        
+        <!-- Welcome page -->
+        <h1><b>Welcome</b></h1>
+        <p>Thank you for wanting to contribute local data to your community</p>
+        <br>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+        <script src="firebase.js"></script>
+        <script src="login.js"></script>
+    </body>
 </html>
