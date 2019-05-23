@@ -190,7 +190,7 @@ input.radio {
   display: none;
   position: absolute;
   left: 270px;
-  top: 360px;
+  
   z-index: 100;
   background-color: #f9f9f9;
   min-width: 160px;
