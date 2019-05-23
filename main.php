@@ -124,7 +124,7 @@
         z-index: 100;
         }
         
-        .button {
+  /*      .button {
         background-color: #f44336;
         border: none;
         color: white;
@@ -158,7 +158,7 @@
         float: left;
         clear: none;
         margin: 10px 10 0 2px;
-        }
+        } */
         
      </style>
 </head>
