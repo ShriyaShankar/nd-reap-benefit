@@ -218,7 +218,14 @@ input.radio {
 
     <div id="mapid"></div>
 
-
+<div class="dropdown">
+  <button id="myBtn" class="dropbtn">View based on category</button> 
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Air</a>
+    <a href="#about">Waste</a>
+    <a href="#contact">Water</a>
+  </div>
+</div>    
 <!-- Button trigger modal -->
 <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
   Category Key
@@ -253,16 +260,7 @@ input.radio {
   </div>
 </div>
 
-<div>
-<div class="dropdown">
-  <button id="myBtn" class="dropbtn">View based on category</button> 
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Air</a>
-    <a href="#about">Waste</a>
-    <a href="#contact">Water</a>
-  </div>
-</div>    
-</div>
+
 
     <div>
 
