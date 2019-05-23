@@ -347,7 +347,7 @@ input.radio {
 
                 <div class="form-group">
                   <label for="description"><br><b>Description</b></label>
-                  <input type="text" placeholder="Describe the problem" name="description" required>
+                  <input type="text" placeholder="Describe the problem" name="description" >
                 </div>
 
                 <input class="btn btn-success" type="submit" value="Submit" name="submit">
