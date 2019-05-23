@@ -171,6 +171,45 @@ input.radio {
   margin: 10px 10 0 2px;
 }
 
+    
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+    
  </style>
 </head>
 
@@ -216,15 +255,15 @@ input.radio {
 </div>
 
 <div>
-
-    <h4><button type="button" class="button">
-    View based on category
-</button></h4>
-document.getElementById("myBtn").onclick = function() {myFunction()};
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-    
+<h4>View based on category</h4>
+<div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Air</a>
+    <a href="#about">Waste</a>
+    <a href="#contact">Water</a>
+  </div>
+</div>    
 </div>
 
     <div>
@@ -359,7 +398,7 @@ function myFunction() {
             id: 'mapbox.streets',
             //accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
         }).addTo(mymap);
-
+        
 
 		mymap.locate({setView: true, maxZoom: 16});
 		function onLocationFound(e) {
