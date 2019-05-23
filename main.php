@@ -134,7 +134,7 @@ h4 {
   top: 340px;
   z-index: 100;
 }   
-    }
+    
 .button {
   background-color: #f44336;
   border: none;
