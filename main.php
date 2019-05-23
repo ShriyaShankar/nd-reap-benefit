@@ -128,52 +128,6 @@ h3 {
   top: 340px;
   z-index: 100;
 }
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  left: 270px;
-  top: 340px;
-  z-index: 100;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 270px;
-  top: 390px;
-  z-index: 100;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.show {display:block;} 
-    
 
  </style>
 </head>
@@ -218,7 +172,14 @@ h3 {
   </div>
 </div>
 
-
+            <div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
     <div>
 
