@@ -124,18 +124,55 @@ h2 {
 }
 h3 {
   position: absolute;
-  left: 120px;
+  left: 130px;
   top: 340px;
   z-index: 100;
+}
+.button {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 10px 24px;;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+
+fieldset {
+  overflow: hidden
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
+
+label {
+  float: left;
+  clear: none;
+  display: block;
+  padding: 0px 1em 0 0;
+}
+
+input[type=radio],
+input.radio {
+  float: left;
+  clear: none;
+  margin: 10px 10 0 2px;
 }
 
  </style>
 </head>
 
 <body>
+    </div>
 
 
     <div id="mapid"></div>
+
 
 
 <!-- Button trigger modal -->
@@ -172,14 +209,7 @@ h3 {
   </div>
 </div>
 
-            <div class="dropdown">
-  <button id="myBtn" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+
 
     <div>
 
@@ -278,8 +308,6 @@ h3 {
 
     </div>
 
-
-
     <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
 
 
@@ -315,7 +343,7 @@ h3 {
             id: 'mapbox.streets',
             //accessToken: 'pk.eyJ1IjoiZ3RtcHJrc2hyYiIsImEiOiJjamZ0bXBqZnMxd3E5MnduejVjdGpuN2R4In0.vvrRpEdZWNwaKUO6vmgRHw'
         }).addTo(mymap);
-        
+
 
 		mymap.locate({setView: true, maxZoom: 16});
 		function onLocationFound(e) {
