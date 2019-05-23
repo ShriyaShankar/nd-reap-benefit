@@ -218,14 +218,7 @@ input.radio {
 
     <div id="mapid"></div>
 
-    <div class="dropdown">
-  <button id="myBtn" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
+
 
 <!-- Button trigger modal -->
 <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
