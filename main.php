@@ -173,7 +173,7 @@ input.radio {
   cursor: pointer;
   position: absolute;
   left: 270px;
-  top: 340px;
+ 
   z-index: 100;
 }
 
@@ -182,7 +182,7 @@ input.radio {
 }
 
 .dropdown {
- 
+  position: relative;
   display: inline-block;
 }
 
