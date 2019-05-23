@@ -213,7 +213,6 @@ input.radio {
 </head>
 
 <body>
-    </div>
 
 
     <div id="mapid"></div>
