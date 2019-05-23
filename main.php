@@ -128,12 +128,7 @@ h3 {
   top: 340px;
   z-index: 100;
 }
-h4 {
-  position: absolute;
-  left: 270px;
-  top: 340px;
-  z-index: 100;
-}   
+  
     
 .button {
   background-color: #f44336;
@@ -146,6 +141,10 @@ h4 {
   font-size: 16px;
   margin: 3px 1px;
   cursor: pointer;
+  position: absolute;
+  left: 270px;
+  top: 340px;
+  z-index: 100;
 }
 
 fieldset {
@@ -256,7 +255,7 @@ input.radio {
 
 <div>
 <div class="dropdown">
- <h4> <button id="myBtn" class="dropbtn">View based on category</button> </h4>
+  <button id="myBtn" class="dropbtn">View based on category</button> 
   <div id="myDropdown" class="dropdown-content">
     <a href="#home">Air</a>
     <a href="#about">Waste</a>
