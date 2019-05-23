@@ -168,11 +168,11 @@ input.radio {
   background-color: #4CAF50;
   color: white;
   padding: 10px 24px;
-  font-size: 14px;
+  font-size: 13px;
   border: none;
   cursor: pointer;
   position: absolute;
-  top: -70px;
+  top: -65px;
   left: 280px;
  
   z-index: 100;
