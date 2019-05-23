@@ -128,49 +128,6 @@ h3 {
   top: 340px;
   z-index: 100;
 }
-  
-    
-.button {
-  background-color: #f44336;
-  border: none;
-  color: white;
-  padding: 10px 24px;;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 3px 1px;
-  cursor: pointer;
-  position: absolute;
-  left: 270px;
-  top: 340px;
-  z-index: 100;
-}
-
-fieldset {
-  overflow: hidden
-}
-
-.some-class {
-  float: left;
-  clear: none;
-}
-
-label {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 0px 1em 0 0;
-}
-
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 10px 10 0 2px;
-}
-
-    
 .dropbtn {
   background-color: #4CAF50;
   color: white;
@@ -178,6 +135,10 @@ input.radio {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  left: 270px;
+  top: 340px;
+  z-index: 100;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -192,10 +153,14 @@ input.radio {
 .dropdown-content {
   display: none;
   position: absolute;
+  left: 270px;
+  top: 390px;
+  z-index: 100;
   background-color: #f9f9f9;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
 }
 
 .dropdown-content a {
@@ -207,25 +172,26 @@ input.radio {
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.show {display:block;}
+.show {display:block;} 
     
+
  </style>
 </head>
 
 <body>
-    </div>
+    <div class="dropdown">
+  <button id="myBtn" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
 
     <div id="mapid"></div>
 
-<div class="dropdown">
-  <button id="myBtn" class="dropbtn">View based on category</button> 
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Air</a>
-    <a href="#about">Waste</a>
-    <a href="#contact">Water</a>
-  </div>
-</div>    
+
 <!-- Button trigger modal -->
 <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
   Category Key
