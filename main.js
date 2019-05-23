@@ -29,9 +29,9 @@ var uid = null;
 
       });
 
-    function logOut(){
-        firebase.auth().signOut();
-    }
+      document.getElementById("logOut").addEventListener('click', e => {
+          firebase.auth().signOut();
+      });
 
     //mainApp.logOut = logOut;
     //

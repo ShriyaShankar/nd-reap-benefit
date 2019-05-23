@@ -214,7 +214,7 @@ input.radio {
     <div>
 
 
-          <h2><button  class="button" onclick="mainApp.logOut()">LogOut</button></h2>
+          <h2><button  class="button" id="logOut">LogOut</button></h2>
 
 
 
