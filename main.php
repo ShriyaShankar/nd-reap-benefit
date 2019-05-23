@@ -168,7 +168,7 @@ input.radio {
   background-color: #4CAF50;
   color: white;
   padding: 10px 24px;
-  font-size: 10px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   position: absolute;
