@@ -182,7 +182,7 @@ input.radio {
 }
 
 .dropdown {
-  position: relative;
+ 
   display: inline-block;
 }
 
