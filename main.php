@@ -172,8 +172,8 @@ input.radio {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: -100px;
-  left: 270px;
+  top: -60px;
+  left: 280px;
  
   z-index: 100;
 }
@@ -190,8 +190,8 @@ input.radio {
 .dropdown-content {
   display: none;
   position: absolute;
-  left: 270px;
-  top: -100px;
+  left: 280px;
+  top: -60px;
   z-index: 100;
   background-color: #f9f9f9;
   min-width: 160px;
