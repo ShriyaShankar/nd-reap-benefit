@@ -180,15 +180,6 @@ input.radio {
 
     <div id="mapid"></div>
 
-<h4><button type="button" class="button" id = "myBtn" data-toggle="modal" data-target="#exampleModalScrollable">
-    View based on category
-</button></h4>
-document.getElementById("myBtn").onclick = function() {myFunction()};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
 <!-- Button trigger modal -->
 <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
@@ -224,7 +215,17 @@ function myFunction() {
   </div>
 </div>
 
+<div>
 
+    <h4><button type="button" class="button">
+    View based on category
+</button></h4>
+document.getElementById("myBtn").onclick = function() {myFunction()};
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+    
+</div>
 
     <div>
 
