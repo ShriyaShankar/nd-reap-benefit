@@ -128,6 +128,13 @@ h3 {
   top: 340px;
   z-index: 100;
 }
+h4 {
+  position: absolute;
+  left: 200px;
+  top: 340px;
+  z-index: 100;
+}   
+    }
 .button {
   background-color: #f44336;
   border: none;
@@ -173,7 +180,15 @@ input.radio {
 
     <div id="mapid"></div>
 
+<h4><button type="button" class="button" id = "myBtn" data-toggle="modal" data-target="#exampleModalScrollable">
+    View based on category
+</button></h4>
+document.getElementById("myBtn").onclick = function() {myFunction()};
 
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
 <!-- Button trigger modal -->
 <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
