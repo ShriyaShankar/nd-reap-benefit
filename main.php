@@ -124,7 +124,7 @@ h2 {
 }
 h3 {
   position: absolute;
-  left: 110px;
+  left: 120px;
   top: 340px;
   z-index: 100;
 }
