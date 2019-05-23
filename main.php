@@ -130,7 +130,7 @@ h3 {
 }
 h4 {
   position: absolute;
-  left: 260px;
+  left: 270px;
   top: 340px;
   z-index: 100;
 }   
