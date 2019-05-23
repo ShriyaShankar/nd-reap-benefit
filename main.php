@@ -6,22 +6,16 @@
     <title>ND Manager</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Leaflet's CSS -->
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/>
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
 
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
-
-
-   <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
     integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
     crossorigin=""></script>
-
-    <!-- Bootstrap CSS for Grid System -->
 
     <!-- Sweetalert JS-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -35,7 +29,6 @@
             body {font-family: Arial, Helvetica, sans-serif;}
             * {box-sizing: border-box;}
 
-            /* Button used to open the contact form - fixed at the bottom of the page */
             .open-button {
               background-color: #555;
               color: white;
@@ -64,8 +57,6 @@
               max-width: 300px;
               padding: 10px;
               background-color: white;
-/*              z-index: 1;*/
-
             }
 
             /* Full-width input fields */
@@ -105,112 +96,71 @@
               opacity: 1;
             }
 
-            </style>
+    </style>
 </head>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-<style>
-h2 {
-  position: absolute;
-  left: 10px;
-  top: 340px;
-  z-index: 100;
-}
-h3 {
-  position: absolute;
-  left: 130px;
-  top: 340px;
-  z-index: 100;
-}
-.button {
-  background-color: #f44336;
-  border: none;
-  color: white;
-  padding: 10px 24px;;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 3px 1px;
-  cursor: pointer;
-}
+    <style>
+        
+        /* LogOut button */
+        h2 {
+        position: absolute;
+        left: 10px;
+        top: 340px;
+        z-index: 100;
+        }
+        
+        /* Category Key button */
+        h3 {
+        position: absolute;
+        left: 130px;
+        top: 340px;
+        z-index: 100;
+        }
+        
+        .button {
+        background-color: #f44336;
+        border: none;
+        color: white;
+        padding: 10px 24px;;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 3px 1px;
+        cursor: pointer;
+        }
 
-fieldset {
-  overflow: hidden
-}
+        fieldset {
+        overflow: hidden
+        }
 
-.some-class {
-  float: left;
-  clear: none;
-}
+        .some-class {
+        float: left;
+        clear: none;
+        }
 
-label {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 0px 1em 0 0;
-}
+        label {
+        float: left;
+        clear: none;
+        display: block;
+        padding: 0px 1em 0 0;
+        }
 
-input[type=radio],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 10px 10 0 2px;
-}
-
-.dropbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 24px;
-  font-size: 13px;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: -65px;
-  left: 280px;
- 
-  z-index: 100;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #3e8e41;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 280px;
-  top: -70px;
-  z-index: 100;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
- .show {display:block;}   
-    
- </style>
+        input[type=radio],
+        input.radio {
+        float: left;
+        clear: none;
+        margin: 10px 10 0 2px;
+        }
+        
+     </style>
 </head>
 
 <body>
