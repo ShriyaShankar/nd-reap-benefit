@@ -220,6 +220,7 @@
 
         <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
        <!-- <p>The Location is <p id="locationdisplay"></p> </p> -->
+            <p id="locationdisplay"></p>
         
         <!-- Name/email/phone number -->
         <div class="form-group">
