@@ -379,13 +379,13 @@
         /* We want bin to be smaller since map looks conjusted */
         var bin_icon = L.Icon.extend({
             options: {
-                iconSize: [15,15]
+                iconSize: [20,20]
             }
         })
         
         /* Creating icon instance for each category */
         var water = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/427/427112.svg'});
-        var waste = new bin_icon({iconUrl: 'https://image.flaticon.com/icons/svg/148/148962.svg'});
+        var waste = new bin_icon({iconUrl: 'https://image.flaticon.com/icons/svg/148/148973.svg'});
         var air = new category_icon({iconUrl: 'https://image.flaticon.com/icons/png/512/1782/1782255.png'});
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1777/1777481.svg'});
