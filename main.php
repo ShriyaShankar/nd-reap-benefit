@@ -249,7 +249,6 @@
                     <option value="sanitation">Sanitation</option>
                     <option value='flood'>Urban Flooding</option>
                     <option value='tree'>Fallen Tree</option>
-                    <option value='urination'>Public Urination</option>
                 </select>
                 <br>
         </div>
@@ -392,7 +391,6 @@
         var sanitation = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1472/1472279.svg'});
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1777/1777481.svg'});
         var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/490/490091.svg'});
-        var urination = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/urination-problem-3-1046617.png'});
         
        </script>
    </body>
@@ -466,12 +464,7 @@
                 marker.bindPopup(\"$desc\");
             </script>");
             }
-                
-            if($cat == 'urination'){
-                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
-            </script>");
-            }
+        }
     } 
     else {
         echo "0 results";
