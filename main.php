@@ -464,8 +464,12 @@
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
-                
-                
+            }
+            
+            if($cat == 'urination'){
+                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
+                marker.bindPopup(\"$desc\");
+            </script>");
             }
         }
     } 
