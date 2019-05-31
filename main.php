@@ -249,6 +249,7 @@
                     <option value="sanitation">Sanitation</option>
                     <option value='flood'>Urban Flooding</option>
                     <option value='tree'>Fallen Tree</option>
+                    <option value='urination'>Public Urination</option>
                 </select>
                 <br>
         </div>
