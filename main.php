@@ -449,7 +449,7 @@
             </script>");
             }
 
-             if($cat == 'Flood'){
+             if($cat == 'Urban Flooding'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
@@ -467,13 +467,13 @@
             </script>");
             }
 
-            if($cat == 'Tree'){
+            if($cat == 'Fallen Tree'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
             
-            if($cat == 'Urination'){
+            if($cat == 'Public Urination'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
