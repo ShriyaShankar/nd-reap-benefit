@@ -42,11 +42,11 @@
         $FloodImageURL = $_POST['floodImageURL'];
         
         //Get row where category is equal to the subcategory
+        echo("<script>console.log($category);</script>");
         $getcategory = "Select * from enumerated_category where $category=sub_category";
         $getcategoryresult = $conn->query($getcategory);
         $getcategoryrow = $result->fetch_assoc();
         $category = $getcategoryrow[id];    //Assigning the category to the primary key of the enumerated_category table
-        echo("<script>console.log($category)</script>");
         echo "Record submitted. ";
 
 
