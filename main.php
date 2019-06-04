@@ -429,6 +429,11 @@
             $cat = $row["category"];
             $desc = $row["description"];
 
+            $getcategory = "Select * from enumerated_category where $cat=sub_category";
+            $getcategoryresult = mysqli_query($conn, $getcategory);
+            $getcategoryrow = mysqli_fetch_array($getcategoryresult);
+            $cat = $getcategoryrow[primary_category_id];    //Assigning the category to the primary key of the enumerated_category table
+
             /* Comparison to pick out appropriate icon */
 
             if($cat == 'waste'){

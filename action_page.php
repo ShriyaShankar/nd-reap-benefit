@@ -42,6 +42,12 @@
         $severity=$_POST['severity'];
         $FloodImageURL = $_POST['floodImageURL'];
         
+        //Get row where category is equal to the subcategory
+        $getcategory = "Select * from enumerated_category where $category=sub_category"
+        $getcategoryresult = mysqli_query($conn, $getcategory);
+        $getcategoryrow = mysqli_fetch_array($getcategoryresult);
+        $category = $getcategoryrow[id];    //Assigning the category to the primary key of the enumerated_category table
+
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
         VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL')";
