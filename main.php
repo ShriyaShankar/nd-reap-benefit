@@ -433,6 +433,7 @@
             $getcategoryresult = mysqli_query($conn, $getcategory);
             $getcategoryrow = mysqli_fetch_array($getcategoryresult);
             $cat = $getcategoryrow[primary_category];    //Assigning the category to the primary key of the enumerated_category table
+            echo("<script>$cat</script>");
 
             /* Comparison to pick out appropriate icon */
 
