@@ -430,8 +430,8 @@
             $desc = $row["description"];
 
             $getcategory = "Select * from enumerated_category where $cat=sub_category";
-            $getcategoryresult = mysqli_query($conn, $getcategory);
-            $getcategoryrow = mysqli_fetch_array($getcategoryresult);
+            $getcategoryresult = $conn->query($getcategory);
+            $getcategoryrow = $getcategoryresult->fetch_assoc();
             $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
             echo("<script>$cat</script>");
 
