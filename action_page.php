@@ -52,7 +52,7 @@
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
-        VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL')";
+        VALUES ('$name', '$latitude', '$longitude', '(string)$category', '$description', '$location', '$severity', '$FloodImageURL')";
 
         // For successful record submission, display message
         if ($conn->query($sql) === TRUE)
