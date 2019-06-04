@@ -44,6 +44,7 @@
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
         $getcategoryresult = $conn->query($getcategory);
+        echo "Error: " . $sql . "<br>" . $conn->error;
         $getcategoryrow = $result->fetch_assoc();
         $categoryid = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
         echo("<script>console.log($categoryid);</script>");
