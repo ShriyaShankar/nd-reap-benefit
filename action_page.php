@@ -47,13 +47,13 @@
         $getcategoryrow = $result->fetch_assoc();
         $category = $getcategoryrow[id];    //Assigning the category to the primary key of the enumerated_category table
         echo("<script>console.log($category)</script>");
+        echo "Record submitted. ";
 
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
         VALUES ('$name', '$latitude', '$longitude', '(string)$category', '$description', '$location', '$severity', '$FloodImageURL')";
 
-        echo "Record submitted. ";
         // For successful record submission, display message
         if ($conn->query($sql) === TRUE)
         {
