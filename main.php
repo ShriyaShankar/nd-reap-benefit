@@ -243,13 +243,13 @@
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
-                    <option value="waste">Waste</option>
-                    <option value="water">Water</option>
-                    <option value="air">Air</option>
-                    <option value="sanitation">Sanitation</option>
-                    <option value='flood'>Urban Flooding</option>
-                    <option value='tree'>Fallen Tree</option>
-                    <option value='urination'>Public Urination</option>
+                    <option value="Waste">Waste</option>
+                    <option value="Water">Water</option>
+                    <option value="Air">Air</option>
+                    <option value="Sanitation">Sanitation</option>
+                    <option value='Flood'>Urban Flooding</option>
+                    <option value='Tree'>Fallen Tree</option>
+                    <option value='Urination'>Public Urination</option>
                 </select>
                 <br>
         </div>

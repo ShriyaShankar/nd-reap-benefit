@@ -36,7 +36,7 @@
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
         $description=$_POST['description'];
-        $category=$_POST['category'];
+        $category=ucfirst($_POST['category']);
         $location=$_POST['location'];
         $severity=$_POST['severity'];
         $FloodImageURL = $_POST['floodImageURL'];
