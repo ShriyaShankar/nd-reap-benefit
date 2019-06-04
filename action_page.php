@@ -44,9 +44,11 @@
         
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where $category=sub_category"
-        $getcategoryresult = mysqli_query($conn, $getcategory);
-        $getcategoryrow = mysqli_fetch_array($getcategoryresult);
+        $getcategoryresult = $conn->query($getcategory);
+        $getcategoryrow = $result->fetch_assoc();
         $category = $getcategoryrow[id];    //Assigning the category to the primary key of the enumerated_category table
+        echo("<script>console.log($category)</script>")
+
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
