@@ -432,48 +432,48 @@
             $getcategory = "Select * from enumerated_category where $cat=sub_category";
             $getcategoryresult = mysqli_query($conn, $getcategory);
             $getcategoryrow = mysqli_fetch_array($getcategoryresult);
-            $cat = $getcategoryrow[primary_category];    //Assigning the category to the primary key of the enumerated_category table
+            $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
             echo("<script>$cat</script>");
 
             /* Comparison to pick out appropriate icon */
 
-            if($cat == 'waste'){
+            if($cat == 'Waste'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
 
-            if($cat == 'water'){
+            if($cat == 'Water'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
 
-             if($cat == 'flood'){
+             if($cat == 'Flood'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
              }
 
-            if($cat == 'air'){
+            if($cat == 'Air'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
 
-            if($cat == 'sanitation'){
+            if($cat == 'Sanitation'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
 
-            if($cat == 'tree'){
+            if($cat == 'Tree'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
             }
             
-            if($cat == 'urination'){
+            if($cat == 'Urination'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
