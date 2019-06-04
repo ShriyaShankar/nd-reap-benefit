@@ -42,8 +42,8 @@
         $FloodImageURL = $_POST['floodImageURL'];
         
         //Get row where category is equal to the subcategory
-        echo("<script>console.log($category);</script>");
-        $getcategory = "Select * from enumerated_category where $category=sub_category";
+        echo("<script>console.log('$category');</script>");
+        $getcategory = "Select * from enumerated_category where '$category'=sub_category";
         $getcategoryresult = $conn->query($getcategory);
         $getcategoryrow = $result->fetch_assoc();
         $category = $getcategoryrow[id];    //Assigning the category to the primary key of the enumerated_category table
@@ -52,7 +52,7 @@
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
-        VALUES ('$name', '$latitude', '$longitude', '(string)$category', '$description', '$location', '$severity', '$FloodImageURL')";
+        VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL')";
 
         // For successful record submission, display message
         if ($conn->query($sql) === TRUE)
