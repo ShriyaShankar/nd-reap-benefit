@@ -45,8 +45,8 @@
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
         $getcategoryresult = $conn->query($getcategory);
         $getcategoryrow = $result->fetch_assoc();
-        $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
-        echo("<script>console.log($category);</script>");
+        $categoryid = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
+        echo("<script>console.log($categoryid);</script>");
         echo "Record submitted. ";
 
 
