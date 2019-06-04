@@ -32,7 +32,6 @@
     // Form values are mapped to database fields
     if(isset($_POST['submit']))
     {
-        echo "Record submitted. ";
         $name=$_POST['name'];
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
@@ -54,6 +53,7 @@
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
         VALUES ('$name', '$latitude', '$longitude', '(string)$category', '$description', '$location', '$severity', '$FloodImageURL')";
 
+        echo "Record submitted. ";
         // For successful record submission, display message
         if ($conn->query($sql) === TRUE)
         {
