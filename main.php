@@ -439,15 +439,15 @@
             
             if($cat == 'Waste'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
-                if($desc != NULL)
-                    marker.bindPopup(\"$desc\");
+                if($desc != null)
+                   { marker.bindPopup(\"$desc\"); }
             </script>");
             }
 
             if($cat == 'Water'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
                 if($desc != NULL)
-                    marker.bindPopup(\"$desc\");
+                   { marker.bindPopup(\"$desc\"); }
             </script>");
             }
 
