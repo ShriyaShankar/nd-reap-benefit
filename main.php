@@ -374,14 +374,14 @@
         /* Creating icon characteristics for inserting icon based on category */
         var category_icon = L.Icon.extend({
             options: {
-                iconSize: [25, 25]
+                iconSize: [15, 15]
                 }
         });
         
         /* We want bin to be smaller since map looks conjusted */
         var bin_icon = L.Icon.extend({
             options: {
-                iconSize: [20,20]
+                iconSize: [15,15]
             }
         })
         
