@@ -436,55 +436,48 @@
             echo("<script>console.log('$cat');</script>");
 
             /* Comparison to pick out appropriate icon */
-            
+            if($desc != NULL){
             if($cat == 'Waste'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
-                if($desc != null)
                    { marker.bindPopup(\"$desc\"); }
             </script>");
             }
 
             if($cat == 'Water'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
-                if($desc != NULL)
                    { marker.bindPopup(\"$desc\"); }
             </script>");
             }
 
              if($cat == 'Urban Flooding'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
-                if($desc != NULL)
                     marker.bindPopup(\"$desc\");
             </script>");
              }
 
             if($cat == 'Air'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
-                if($desc != NULL)
                     marker.bindPopup(\"$desc\");
             </script>");
             }
 
             if($cat == 'Sanitation'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
-                if($desc != NULL)
                     marker.bindPopup(\"$desc\");
             </script>");
             }
 
             if($cat == 'Fallen Tree'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
-                if($desc != NULL)
                     marker.bindPopup(\"$desc\");
             </script>");
             }
             
             if($cat == 'Public Urination'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
-                if($desc != NULL)
                     marker.bindPopup(\"$desc\");
             </script>");
-            }
+            } }
         }
     } 
     else {
