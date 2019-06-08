@@ -436,7 +436,7 @@
             echo("<script>console.log('$cat');</script>");
 
             /* Comparison to pick out appropriate icon */
-            
+            if($desc != NULL){
             if($cat == 'Waste'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
                    { marker.bindPopup(\"$desc\"); }
