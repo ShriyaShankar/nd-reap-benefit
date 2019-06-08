@@ -374,14 +374,14 @@
         /* Creating icon characteristics for inserting icon based on category */
         var category_icon = L.Icon.extend({
             options: {
-                iconSize: [15, 15]
+                iconSize: [18, 18]
                 }
         });
         
         /* We want bin to be smaller since map looks conjusted */
         var bin_icon = L.Icon.extend({
             options: {
-                iconSize: [15,15]
+                iconSize: [18,18]
             }
         })
         
@@ -436,46 +436,53 @@
             echo("<script>console.log('$cat');</script>");
 
             /* Comparison to pick out appropriate icon */
-
+            
             if($cat == 'Waste'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: waste}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
 
             if($cat == 'Water'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: water}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
 
              if($cat == 'Urban Flooding'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: flood}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
              }
 
             if($cat == 'Air'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: air}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
 
             if($cat == 'Sanitation'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: sanitation}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
 
             if($cat == 'Fallen Tree'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
             
             if($cat == 'Public Urination'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
-                marker.bindPopup(\"$desc\");
+                if($desc != NULL)
+                    marker.bindPopup(\"$desc\");
             </script>");
             }
         }
