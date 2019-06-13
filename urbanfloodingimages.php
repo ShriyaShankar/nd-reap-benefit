@@ -38,7 +38,7 @@
         while($row = $result->fetch_assoc()) 
         {
             $imageURL = $row["FloodImageURL"];
-            echo("<script>docuemnt.getElementById('floodimage').innerHTML = '<img src=\"$imageURL\" class=\"img-thumbnail\">'</script>");
+            echo("<script>document.getElementById('floodimage').innerHTML = '<img src=\"$imageURL\" class=\"img-thumbnail\">'</script>");
         }
     }
     else {
