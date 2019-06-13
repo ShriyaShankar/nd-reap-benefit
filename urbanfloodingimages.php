@@ -32,8 +32,7 @@
             var innerhtml;
                 for(int i=0; i<imgArray.length; i++)
                 {
-                    innerhtml += `
-                    <div class="col-md-4 col-sm-6 portfolio-item">
+                    innerhtml += `<div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -46,10 +45,9 @@
               <h4>African Union</h4>
               <p >Non Crisis</p>
             </div>
-          </div>
-                    `);
-                }
-                document.getElementById.innerHTML = innerhtml;
+          </div>`
+          }
+                document.getElementById('images').innerHTML = innerhtml;
         </script>
 
 <?php
