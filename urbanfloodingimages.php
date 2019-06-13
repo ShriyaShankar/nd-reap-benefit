@@ -39,7 +39,7 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="${imageArray[i]}" alt="" style="width:300px;height:300px; position:relative; right:-50px;">
+              <img class="img-fluid" src=${imageArray[i]} alt="" style="width:300px;height:300px; position:relative; right:-50px;">
             </a>
             <div class="portfolio-caption">
               <h4>African Union</h4>
