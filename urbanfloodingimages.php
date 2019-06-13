@@ -31,19 +31,19 @@
 
     /* To read db and print out rexpective icons with description */
     $sql = "SELECT FloodImageURL from data where category=5";
-    $result = $conn->query($sql)
+    $result = $conn->query($sql);
 
-    // if ($result->num_rows > 0) 
-    // {
-    //     while($row = $result->fetch_assoc()) 
-    //     {
-    //         //$imageURL = $row["FloodImageURL"];
-    //         //echo("<script>docuemnt.getElementById('floodimage').innerHTML = '<img src=\"$imageURL\" class=\"img-thumbnail\">'</script>");
-    //     }
-    // }
-    // else {
-    //     echo "0 results";
-    // }
+    if ($result->num_rows > 0) 
+    {
+        while($row = $result->fetch_assoc()) 
+        {
+            $imageURL = $row["FloodImageURL"];
+            echo("<script>docuemnt.getElementById('floodimage').innerHTML = '<img src=\"$imageURL\" class=\"img-thumbnail\">'</script>");
+        }
+    }
+    else {
+        echo "0 results";
+    }
     
     // Close connection
     $conn->close();
