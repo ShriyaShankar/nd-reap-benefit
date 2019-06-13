@@ -10,6 +10,10 @@
     <body>
         <div class="row" id="floodimage">
         </div>
+
+        <script>
+            var imgArray = [];
+        </script>
     </body>
 </html>
 
@@ -38,7 +42,10 @@
         while($row = $result->fetch_assoc()) 
         {
             $imageURL = $row["FloodImageURL"];
-            echo("<script>document.getElementById('floodimage').innerHTML = '<img src=\"$imageURL\" class=\"img-thumbnail\">'</script>");
+            if($imageURL != NULL && $imageURL != '')
+            {
+                echo("<script>imgArray.push($imageURL)</script>");
+            }
         }
     }
     else {
