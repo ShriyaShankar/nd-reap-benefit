@@ -14,8 +14,6 @@
         <script>
             var imgArray = [];
         </script>
-    </body>
-</html>
 
 <?php
     
@@ -44,7 +42,7 @@
             $imageURL = $row["FloodImageURL"];
             if($imageURL != NULL && $imageURL != '')
             {
-                echo("<script>imgArray.push($imageURL)</script>");
+                echo("<script>imgArray.push($imageURL);</script>");
             }
         }
     }
@@ -55,3 +53,7 @@
     // Close connection
     $conn->close();
 ?>
+
+
+</body>
+</html>
