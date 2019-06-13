@@ -14,7 +14,7 @@
 </html>
 
 <?php
-    
+/*    
     //Credentials
     $servername = "localhost";
     $username = "admin";
@@ -29,7 +29,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    /* To read db and print out rexpective icons with description */
+    // To read db and print out rexpective icons with description
     $sql = "SELECT FloodImageURL from data where category=5";
     $result = $conn->query($sql)
 
@@ -48,4 +48,5 @@
     
     // Close connection
     $conn->close();
+    */
 ?>
