@@ -64,7 +64,7 @@
             $imageURL = $row["FloodImageURL"];
             if($imageURL != NULL && $imageURL != '')
             {
-                echo("<script>imgArray.push(\'<a href=\"$imageURL\">$imageURL</a>\');</script>");
+                echo("<script>imgArray.push('<a href=\"$imageURL\">$imageURL</a>');</script>");
             }
         }
     }
