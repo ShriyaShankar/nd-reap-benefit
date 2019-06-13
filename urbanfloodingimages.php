@@ -29,9 +29,10 @@
         </script>
 
         <script>
+            var innerhtml;
                 for(int i=0; i<imgArray.length; i++)
                 {
-                    document.getElementById(images).appendChild(`
+                    innerhtml += `
                     <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -48,6 +49,7 @@
           </div>
                     `);
                 }
+                document.getElementById.innerHTML = innerhtml;
         </script>
 
 <?php
