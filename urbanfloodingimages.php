@@ -32,21 +32,8 @@
             var innerhtml;
                 for(int i=0; i<imgArray.length; i++)
                 {
-                    innerhtml += `<div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src=${imageArray[i]} alt="" style="width:300px;height:300px; position:relative; right:-50px;">
-            </a>
-            <div class="portfolio-caption">
-              <h4>African Union</h4>
-              <p >Non Crisis</p>
-            </div>
-          </div>`
-          }
+                    innerhtml += `
+                }
                 document.getElementById('images').innerHTML = innerhtml;
         </script>
 
@@ -77,7 +64,7 @@
             $imageURL = $row["FloodImageURL"];
             if($imageURL != NULL && $imageURL != '')
             {
-                echo("<script>imgArray.push(\"$imageURL\");</script>");
+                echo("<script>imgArray.push(\'<a href=\"$imageURL\">$imageURL</a>\');</script>");
             }
         }
     }
