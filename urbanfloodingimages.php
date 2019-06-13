@@ -46,7 +46,7 @@
               <p >Non Crisis</p>
             </div>
           </div>
-                    `)
+                    `);
                 }
         </script>
 
