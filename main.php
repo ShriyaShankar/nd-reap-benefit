@@ -266,6 +266,13 @@
             <label for="p">Severe</label>
         </div>
     -->
+    <label><b><br>Type of Ganesha Idol: <b/><br></label>
+        <div class="some-class">
+            <input type="radio" class="radio" name="idol" value="clay" id="y" />
+            <label for="y">Clay Idol</label>
+            <input type="radio" class="radio" name="idol" value="PoP" id="z" />
+            <label for="z">PoP< Idol</label>
+        </div>
 
         <!-- Location -->
         <div class="form-group">
@@ -291,7 +298,7 @@
         <!-- Image upload -->
         <div class="form-group">
             <form action="POST">
-                Upload Image: <input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+                Upload Image: (optional)<input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
                 <p id="ProgressBar"></p>
             </form>
         </div>

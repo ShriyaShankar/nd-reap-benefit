@@ -40,6 +40,7 @@
         $location=$_POST['location'];
         $severity=$_POST['severity'];
         $FloodImageURL = $_POST['floodImageURL'];
+        $TypeOfIdol = $_POST['idol'];
         
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
@@ -49,7 +50,7 @@
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
-        VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL')";
+        VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL', '$TypeOfIdol')";
         echo "Record submitted. ";
 
         // For successful record submission, display message
