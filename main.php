@@ -478,14 +478,12 @@
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
                     marker.bindPopup(\"$desc\");
             </script>");
-
+            } }
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
                     marker.bindPopup(\"$desc\");
             </script>");
             }
-            } }
-
         }
     } 
     else {
