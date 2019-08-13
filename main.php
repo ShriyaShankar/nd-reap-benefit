@@ -244,13 +244,13 @@
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
                     <option value="GaneshaIdol">Ganesha Idol</option>
-                    <option value="Waste">Waste</option>
+                 <!--   <option value="Waste">Waste</option>
                     <option value="Water">Water</option>
                     <option value="Air">Air</option>
                     <option value="Sanitation">Sanitation</option>
                     <option value='Flood'>Urban Flooding</option>
                     <option value='Tree'>Fallen Tree</option>
-                    <!-- <option value='Urination'>Public Urination</option> -->
+                    <!-- <option value='Urination'>Public Urination</option> --> -->
                 </select>
                 <br>
         </div>
