@@ -256,7 +256,7 @@
         </div>
             
         <!-- Severity scale -->  
-        <label><b><br>Status of Problem: <b/><br></label>
+      <!--  <label><b><br>Status of Problem: <b/><br></label>
         <div class="some-class">
             <input type="radio" class="radio" name="severity" value="mild" id="y" />
             <label for="y">Mild</label>
@@ -265,6 +265,7 @@
             <input type="radio" class="radio" name="severity" value="severe" id="p" />
             <label for="p">Severe</label>
         </div>
+    -->
 
         <!-- Location -->
         <div class="form-group">
@@ -394,7 +395,7 @@
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1777/1777481.svg'});
         var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/490/490091.svg'});
         var urination = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/urination-problem-3-1046617.png'});
-        var ganesha = new category_icon({iconUrl: 'https://image.flaticon.com/icons/png/512/706/706305.png'});
+        var ganesha = new category_icon({iconUrl: 'hhttps://cdn0.iconfinder.com/data/icons/holidays-2-2/50/198-512.png'});
        </script>
    </body>
 </html>
