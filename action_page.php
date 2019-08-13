@@ -49,7 +49,7 @@
         $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
 
         // Query to insert values into database
-        $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL)
+        $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, severity, FloodImageURL, idol)
         VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$severity', '$FloodImageURL', '$TypeOfIdol')";
         echo "Record submitted. ";
 

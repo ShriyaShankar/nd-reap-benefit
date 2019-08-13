@@ -271,7 +271,7 @@
             <input type="radio" class="radio" name="idol" value="clay" id="y" />
             <label for="y">Clay Idol</label>
             <input type="radio" class="radio" name="idol" value="PoP" id="z" />
-            <label for="z">PoP< Idol</label>
+            <label for="z">PoP Idol</label>
         </div>
 
         <!-- Location -->
