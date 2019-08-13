@@ -243,6 +243,7 @@
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
+                    <option value="GaneshaIdol">Ganesha Idol</option>
                     <option value="Waste">Waste</option>
                     <option value="Water">Water</option>
                     <option value="Air">Air</option>
@@ -393,7 +394,7 @@
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1777/1777481.svg'});
         var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/490/490091.svg'});
         var urination = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/urination-problem-3-1046617.png'});
-        
+        var GaneshaIdol = new category_icon({iconUrl: 'https://cdn0.iconfinder.com/data/icons/holidays-2-2/50/198-512.png'});
        </script>
    </body>
 </html>
@@ -477,6 +478,12 @@
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: urination}).addTo(mymap);
                     marker.bindPopup(\"$desc\");
             </script>");
+
+            if($cat == 'GaneshaIdol'){
+                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: GaneshaIdol}).addTo(mymap);
+                    marker.bindPopup(\"$desc\");
+            </script>");
+            }
             } }
 
         }
