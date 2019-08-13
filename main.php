@@ -402,7 +402,7 @@
         var flood = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1777/1777481.svg'});
         var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/490/490091.svg'});
         var urination = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/urination-problem-3-1046617.png'});
-        var ganesha = new category_icon({iconUrl: 'https://cdn0.iconfinder.com/data/icons/holidays-2-2/50/198-512.png'});
+        var ganesha = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/805/805294.svg'});
        </script>
    </body>
 </html>
