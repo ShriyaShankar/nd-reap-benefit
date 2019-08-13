@@ -306,8 +306,8 @@
             
         <!-- Description -->
         <div class="form-group">
-            <label for="description"><br><b>Description</b></label>
-            <input type="text" placeholder="Describe the problem" name="description" >
+            <label for="description"><br><b>Number of idols:</b></label>
+            <input type="text" placeholder="Mention for each type of idol" name="description" >
         </div>
             
         <input class="btn btn-success" type="submit" value="Submit" name="submit">
