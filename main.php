@@ -431,7 +431,8 @@
     }
 
     /* To read db and print out rexpective icons with description */
-    $sql = "SELECT latitude, longitude, category, description from data";
+   // $sql = "SELECT latitude, longitude, category, description from data";
+    $sql = "SELECT Latitude, Longitude, Category from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
@@ -441,7 +442,7 @@
             $floatlat = floatval( $row["latitude"]);
             $floatlng = floatval( $row["longitude"]);
             $cat = $row["category"];
-            $desc = $row["description"];
+           // $desc = $row["description"];
 
             $getcategory = "Select * from enumerated_category where '$cat'=id";
             $getcategoryresult = $conn->query($getcategory);
