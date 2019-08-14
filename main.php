@@ -282,7 +282,7 @@
 
         <div class="form-group">
             <label for="description"><br><b>Landmark</b></label>
-            <input type="text" placeholder="Mention anyy landmark nearby" name="description" >
+            <input type="text" placeholder="Landmark nearby, if any" name="description" >
         </div>
             
         <style>
