@@ -243,7 +243,7 @@
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
-                    <option value="GaneshaIdol">Ganesha Idol</option>
+                    <option value="GaneshaIdol">Clay Ganesha Idol</option>
                  <!--   <option value="Waste">Waste</option>
                     <option value="Water">Water</option>
                     <option value="Air">Air</option>
@@ -266,18 +266,23 @@
             <label for="p">Severe</label>
         </div>
     -->
-    <label><b><br>Type of Ganesha Idol: <b/><br></label>
+ <!--   <label><b><br>Type of Ganesha Idol: <b/><br></label>
         <div class="some-class">
             <input type="radio" class="radio" name="idol" value="clay" id="y" />
             <label for="y">Clay Idol</label>
             <input type="radio" class="radio" name="idol" value="PoP" id="z" />
             <label for="z">PoP Idol</label>
-        </div>
+        </div> -->
 
         <!-- Location -->
         <div class="form-group">
             <label for="location"><b><br><br>Location</b></label>
             <input type="text" placeholder="Location" readonly name="location" required id="lcn">
+        </div>
+
+        <div class="form-group">
+            <label for="description"><br><b>Landmark</b></label>
+            <input type="text" placeholder="Mention anyy landmark nearby" name="description" >
         </div>
             
         <style>
@@ -305,10 +310,10 @@
         <input type="url" hidden name="floodImageURL" id="floodImageURL">
             
         <!-- Description -->
-        <div class="form-group">
+      <!--  <div class="form-group">
             <label for="description"><br><b>Number of idols:</b></label>
             <input type="text" placeholder="Mention for each type of idol" name="description" >
-        </div>
+        </div> -->
             
         <input class="btn btn-success" type="submit" value="Submit" name="submit">
 
@@ -383,7 +388,7 @@
         /* Creating icon characteristics for inserting icon based on category */
         var category_icon = L.Icon.extend({
             options: {
-                iconSize: [18, 18]
+                iconSize: [25, 25]
                 }
         });
         
