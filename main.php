@@ -439,9 +439,9 @@
     {
         while($row = $result->fetch_assoc()) 
         {
-            $floatlat = floatval( $row["latitude"]);
-            $floatlng = floatval( $row["longitude"]);
-            $cat = $row["category"];
+            $floatlat = floatval( $row["Latitude"]);
+            $floatlng = floatval( $row["Longitude"]);
+            $cat = $row["Category"];
            // $desc = $row["description"];
 
             $getcategory = "Select * from Clay_Ganesha_Idol";
