@@ -49,7 +49,7 @@
         $category=ucfirst($_POST['category']);
         $location=$_POST['location'];
         $landmark=$_POST['landmark'];
-        $FloodImageURL = $_POST['floodImageURL'];
+        $FloodImageURL = $_POST['Image_URL'];
        
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
