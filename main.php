@@ -444,10 +444,10 @@
             $cat = $row["category"];
            // $desc = $row["description"];
 
-            $getcategory = "Select * from enumerated_category where '$cat'=id";
+            $getcategory = "Select * from enumerated_category where '$cat'='Ganesha Idol'";
             $getcategoryresult = $conn->query($getcategory);
             $getcategoryrow = $getcategoryresult->fetch_assoc();
-            $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
+         //   $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
             echo("<script>console.log('$cat');</script>");
 
             /* Comparison to pick out appropriate icon */
