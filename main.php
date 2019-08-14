@@ -444,9 +444,9 @@
             $cat = $row["Category"];
            // $desc = $row["description"];
 
-            $getcategory = "Select * from Clay_Ganesha_Idol";
-            $getcategoryresult = $conn->query($getcategory);
-            $getcategoryrow = $getcategoryresult->fetch_assoc();
+            //$getcategory = "Select * from Clay_Ganesha_Idol";
+            //$getcategoryresult = $conn->query($getcategory);
+            //$getcategoryrow = $getcategoryresult->fetch_assoc();
          //   $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
             echo("<script>console.log('$cat');</script>");
 
