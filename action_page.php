@@ -43,13 +43,13 @@
         $FloodImageURL = $_POST['floodImageURL'];
         $TypeOfIdol = $_POST['idol'];
         */
-        $name=$_POST['Phone_Email'];
-        $latitude=$_POST['Latitude'];
-        $longitude=$_POST['Longitude'];
-        $category=ucfirst($_POST['Category']);
-        $location=$_POST['Location'];
-        $landmark=$_POST['Landmark'];
-        $FloodImageURL = $_POST['Image_URL'];
+        $name=$_POST['name'];
+        $latitude=$_POST['latitude'];
+        $longitude=$_POST['longitude'];
+        $category=ucfirst($_POST['category']);
+        $location=$_POST['location'];
+        $landmark=$_POST['landmark'];
+        $FloodImageURL = $_POST['floodImageURL'];
        
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
