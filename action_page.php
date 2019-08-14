@@ -15,7 +15,8 @@
     $username = "admin";
     $password = "r3apb3n3fit";
     $dbname = "nd_manager";
-    $table = "data";
+    //$table = "data";
+    $table = "Clay_Ganesha_Idol";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -32,7 +33,7 @@
     // Form values are mapped to database fields
     if(isset($_POST['submit']))
     {
-        $name=$_POST['name'];
+       /* $name=$_POST['name'];
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
         $description=$_POST['description'];
@@ -41,16 +42,24 @@
         $severity=$_POST['severity'];
         $FloodImageURL = $_POST['floodImageURL'];
         $TypeOfIdol = $_POST['idol'];
-        
+        */
+        $name=$_POST['Phone_Email'];
+        $latitude=$_POST['Latitude'];
+        $longitude=$_POST['Longitude'];
+        $category=ucfirst($_POST['Category']);
+        $location=$_POST['Location'];
+        $landmark=$_POST['Landmark'];
+        $FloodImageURL = $_POST['Image_URL'];
+       
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
         $getcategoryresult = $conn->query($getcategory);
         $getcategoryrow = $getcategoryresult->fetch_assoc();
-        $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
+       // $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
 
         // Query to insert values into database
         $sql = "INSERT INTO data (name, latitude, longitude, category, description, location, FloodImageURL, idol)
-        VALUES ('$name', '$latitude', '$longitude', '$category', '$description', '$location', '$FloodImageURL', '$TypeOfIdol')";
+        VALUES ('$name', '$latitude', '$longitude', '$category', '$location', '$landmark','$Image_URL')";
         echo "Record submitted. ";
 
         // For successful record submission, display message
