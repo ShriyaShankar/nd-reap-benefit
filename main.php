@@ -432,7 +432,7 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "SELECT Latitude, Longitude, Category from Clay_Ganesha_Idol";
+    $sql = "SELECT Latitude, Longitude, Category, Landmark from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
