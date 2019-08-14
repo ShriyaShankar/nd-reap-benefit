@@ -442,6 +442,7 @@
             $floatlat = floatval( $row["Latitude"]);
             $floatlng = floatval( $row["Longitude"]);
             $cat = $row["Category"];
+            $landmark = $row["Landmark"];
            // $desc = $row["description"];
 
             //$getcategory = "Select * from Clay_Ganesha_Idol";
@@ -495,7 +496,7 @@
             }  */
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
-                    marker.bindPopup(\"$desc\");
+                    marker.bindPopup(\"$landmark\");
             </script>");
             }
         // }
