@@ -15,17 +15,17 @@
     }
 
     /* To read db and print out rexpective icons with description */
-    $sql = "SELECT latitude, longitude, category, description from data";
+    $sql = "SELECT Latitude, Longitude, Category, description from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
     {
         while($row = $result->fetch_assoc()) 
         {
-            $floatlat = floatval( $row["latitude"]);
-            $floatlng = floatval( $row["longitude"]);
-            $cat = $row["category"];
-            $desc = $row["description"];
+            $floatlat = floatval( $row["Latitude"]);
+            $floatlng = floatval( $row["Longitude"]);
+            $cat = $row["Category"];
+          //  $desc = $row["description"];
 
             /* Comparison to pick out appropriate icon */
 
@@ -63,6 +63,10 @@
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: tree}).addTo(mymap);
                 marker.bindPopup(\"$desc\");
             </script>");
+            }
+
+            if($cat == 'Ganesha_Idol'){
+                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: Ganesha_Idol}).addTo(mymap);
             }
         }
     } 
