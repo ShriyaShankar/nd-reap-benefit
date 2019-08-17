@@ -47,7 +47,7 @@ var mainApp = {};
               const leadTimestamp = Math.floor(Date.now() / 1000);
 
               //upload file
-              var task = storageRef.child(`FloodImages/${firebase.auth().currentUser.email}_${leadTimestamp}`).put(file);
+              var task = storageRef.child(`EcoGaneshaImages/${firebase.auth().currentUser.email}_${leadTimestamp}`).put(file);
               console.log(file.name.split('.').pop());
         
               // Listen for state changes, errors, and completion of the upload.
