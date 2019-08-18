@@ -47,6 +47,7 @@ var mainApp = {};
               const leadTimestamp = Math.floor(Date.now() / 1000);
 
               //upload file
+              var userIdentifierImage = (firebase.auth().currentUser.email == null) ? firebase.auth().currentUser.email : firebase.auth().currentUser.phoneNumber;
               var task = storageRef.child(`EcoGaneshaImages/${firebase.auth().currentUser.email}_${leadTimestamp}`).put(file);
               console.log(file.name.split('.').pop());
         
