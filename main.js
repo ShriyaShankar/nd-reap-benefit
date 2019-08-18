@@ -48,7 +48,7 @@ var mainApp = {};
 
               //upload file
               var userIdentifierImage = (firebase.auth().currentUser.email == null) ? firebase.auth().currentUser.email : firebase.auth().currentUser.phoneNumber;
-              var task = storageRef.child(`EcoGaneshaImages/${firebase.auth().currentUser.email}_${leadTimestamp}`).put(file);
+              var task = storageRef.child(`EcoGaneshaImages/${userIdentifierImage}_${leadTimestamp}`).put(file);
               console.log(file.name.split('.').pop());
         
               // Listen for state changes, errors, and completion of the upload.
