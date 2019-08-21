@@ -448,7 +448,7 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "SELECT Latitude, Longitude, Category, Landmark, Shop from Clay_Ganesha_Idol";
+    $sql = "SELECT Latitude, Longitude, Category, Landmark, ShopName from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
@@ -459,7 +459,7 @@
             $floatlng = floatval( $row["Longitude"]);
             $cat = $row["Category"];
             $landmark = $row["Landmark"];
-            $shop = $row["Shop"];
+            $shop = $row["ShopName"];
            // $desc = $row["description"];
 
             //$getcategory = "Select * from Clay_Ganesha_Idol";
