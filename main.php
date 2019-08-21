@@ -236,7 +236,7 @@
         <!-- Name/email/phone number -->
         <div class="form-group">
             <label for="identifier" id="identifier"></label>
-            <input type="text" placeholder="Enter Name" name="name" id="form-name" readonly required />
+            <input type="text" placeholder="Enter Name" name="name" id="form-name" required />
         </div>
         
         <!-- Latitude longitude -->
