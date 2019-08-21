@@ -513,7 +513,7 @@
             }  */
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
-                    marker.bindPopup(\"$landmark\");
+                    marker.bindPopup(\"$landmark, $shop\");
             </script>");
             }
         // }
