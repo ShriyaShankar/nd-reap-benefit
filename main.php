@@ -249,7 +249,7 @@
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
         </div>
         
-        <!-- Categry -->
+        <!-- Category -->
         <div class="form-group">
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
@@ -290,10 +290,15 @@
             <label for="location"><b><br><br>Location</b></label>
             <input type="text" placeholder="Location" readonly name="location" required id="lcn">
         </div>
-
+      
         <div class="form-group">
             <label for="description"><br><b>Landmark</b></label>
             <input type="text" placeholder="Landmark nearby, if any" name="landmark" >
+        </div>
+
+        <div class="form-group">
+            <label for="shop"><br><b>Shop Name</b></label>
+            <input type="text" placeholder="Or vendor's name" name="shop" >
         </div>
             
         <style>
@@ -443,7 +448,7 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "SELECT Latitude, Longitude, Category, Landmark from Clay_Ganesha_Idol";
+    $sql = "SELECT Latitude, Longitude, Category, Landmark, Shop from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
@@ -454,6 +459,7 @@
             $floatlng = floatval( $row["Longitude"]);
             $cat = $row["Category"];
             $landmark = $row["Landmark"];
+            $shop = $row["Shop"];
            // $desc = $row["description"];
 
             //$getcategory = "Select * from Clay_Ganesha_Idol";
@@ -507,7 +513,7 @@
             }  */
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
-                    marker.bindPopup(\"$landmark\");
+                    marker.bindPopup(\"$landmark, $shop\");
             </script>");
             }
         // }
