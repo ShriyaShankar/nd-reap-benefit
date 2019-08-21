@@ -182,10 +182,10 @@
 
     <div id="mapid"></div>
     
-    <!-- Category key button with h3 tag -->
+    <!-- Category key button with h3 tag 
     <h3><button type="button" class="button" data-toggle="modal" data-target="#exampleModalScrollable">
         Category Key
-    </button></h3>
+    </button></h3> -->
 
     <!-- Scrollable category key -->
     <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
