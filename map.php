@@ -210,12 +210,12 @@
         
         /* Geolocation error */
         function onLocationError(e) {
-            swal({
-            icon: 'error',
-            title: 'Oops',
-            text: e.message,
-            button: 'OK',
-            });
+            // swal({
+            // icon: 'error',
+            // title: 'Oops',
+            // text: e.message,
+            // button: 'OK',
+            // });
         }
 
         mymap.on('locationerror', onLocationError);
