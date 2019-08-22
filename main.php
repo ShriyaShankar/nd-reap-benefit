@@ -9,11 +9,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
+    Feature-Policy: geolocation '*'
     gtag('config', 'UA-145741958-1');
     </script>
 
-
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ND Manager</title>
