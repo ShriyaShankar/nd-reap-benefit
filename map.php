@@ -8,6 +8,8 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-145741958-1');
+    Feature-Policy: geolocation '*'
+
     </script>
 
 
