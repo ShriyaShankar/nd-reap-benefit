@@ -13,11 +13,11 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ND Manager</title>
+    <title>Eco Ganesha Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Leaflet's CSS -->
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script> -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
     integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
     crossorigin=""/>
@@ -179,8 +179,8 @@
 
     <div id="mapid"></div>
 
-    <script src="firebase.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="firebase.js"></script> -->
+    <!-- <script src="main.js"></script> -->
 
 
     <script>
