@@ -195,6 +195,7 @@
             maxZoom: 20,
             id: 'mapbox.streets',
         }).addTo(mymap);
+        mymap.panTo(new L.LatLng(12.925, 77.595));
 
         /* Geolocation - autolocate */
         mymap.locate({setView: true, maxZoom: 16});
