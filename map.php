@@ -191,11 +191,11 @@
         var mymap = L.map('mapid'), infoWindow;
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+            center: [12.925, 77.595],
             minZoom: 4,
             maxZoom: 20,
             id: 'mapbox.streets',
         }).addTo(mymap);
-        mymap.panTo(new L.LatLng(12.925, 77.595));
 
         /* Geolocation - autolocate */
         mymap.locate({setView: true, maxZoom: 16});
