@@ -51,6 +51,7 @@
         $landmark=$_POST['landmark'];
         $FloodImageURL = $_POST['floodImageURL'];
         $shop = $_POST['shop'];
+        $ShopPhoneNumber = $_POST['ShopPhoneNumber'];
        
         //Get row where category is equal to the subcategory
         $getcategory = "Select * from enumerated_category where '$category'=sub_category";
@@ -59,8 +60,8 @@
        // $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
 
         // Query to insert values into database
-        $sql = "INSERT INTO Clay_Ganesha_Idol (Phone_Email, Latitude, Longitude, Category, Location, Landmark, Image_URL, ShopName)
-        VALUES ('$name', '$latitude', '$longitude', '$category', '$location', '$landmark','$FloodImageURL', '$shop')";
+        $sql = "INSERT INTO Clay_Ganesha_Idol (Phone_Email, Latitude, Longitude, Category, Location, Landmark, Image_URL, ShopName, ShopPhoneNumber)
+        VALUES ('$name', '$latitude', '$longitude', '$category', '$location', '$landmark','$FloodImageURL', '$shop', $ShopPhoneNumber)";
         echo "Record submitted. ";
 
         // For successful record submission, display message

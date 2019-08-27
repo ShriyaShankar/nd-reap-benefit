@@ -300,6 +300,11 @@
             <label for="shop"><br><b>Shop Name</b></label>
             <input type="text" placeholder="Or vendor's name" name="shop" >
         </div>
+
+        <div class="form-group">
+            <label for="ShopPhoneNumber"><br><b>Shop Phone Number:</b></label>
+            <input type="text" placeholder="Contact Number" name="ShopPhoneNumber" >
+        </div>
             
         <style>
         input[type=file] {
@@ -448,7 +453,7 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "SELECT Latitude, Longitude, Category, Landmark, ShopName from Clay_Ganesha_Idol";
+    $sql = "SELECT Latitude, Longitude, Category, Landmark, ShopName, ShopPhoneNumber from Clay_Ganesha_Idol";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
