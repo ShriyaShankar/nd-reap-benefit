@@ -191,8 +191,9 @@
         var mymap = L.map('mapid'), infoWindow;
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-            minZoom: 4,
-            maxZoom: 20,
+            center: [12.925, 77.595],
+            // minZoom: 4,
+            // maxZoom: 20,
             id: 'mapbox.streets',
         }).addTo(mymap);
 
@@ -210,12 +211,12 @@
         
         /* Geolocation error */
         function onLocationError(e) {
-            swal({
-            icon: 'error',
-            title: 'Oops',
-            text: e.message,
-            button: 'OK',
-            });
+            // swal({
+            // icon: 'error',
+            // title: 'Oops',
+            // text: e.message,
+            // button: 'OK',
+            // });
         }
 
         mymap.on('locationerror', onLocationError);
