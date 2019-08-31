@@ -430,6 +430,7 @@
         var tree = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/490/490091.svg'});
         var urination = new category_icon({iconUrl: 'https://cdn.iconscout.com/icon/premium/png-256-thumb/urination-problem-3-1046617.png'});
         var ganesha = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/805/805294.svg'});
+        var visarjane = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1197/1197849.svg'});
        </script>
    </body>
 </html>
@@ -519,6 +520,12 @@
             }  */
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
+                    marker.bindPopup(\"$shop <br> $landmark\"); 
+            </script>");
+            }
+
+            if($cat == 'GaneshaVisarjane'){
+                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: visarjane}).addTo(mymap);
                     marker.bindPopup(\"$shop <br> $landmark\"); 
             </script>");
             }
