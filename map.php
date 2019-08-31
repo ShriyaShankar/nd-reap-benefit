@@ -320,6 +320,11 @@
                     marker.bindPopup(\"$landmark\");
             </script>");
             }
+            if($cat == 'GaneshaVisarjane'){
+                echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: visarjane}).addTo(mymap);
+                    marker.bindPopup(\"$shop <br> $landmark\"); 
+            </script>");
+            }
         // }
         }
     } 
