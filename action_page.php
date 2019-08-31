@@ -61,7 +61,7 @@
 
         // Query to insert values into database
         $sql = "INSERT INTO Clay_Ganesha_Idol (Phone_Email, Latitude, Longitude, Category, Location, Landmark, Image_URL, ShopName, ShopPhoneNumber)
-        VALUES ('$name', '$latitude', '$longitude', '$category', '$location', '$landmark','$FloodImageURL', '$shop', $ShopPhoneNumber)";
+        VALUES ('$name', '$latitude', '$longitude', '$category', '$location', '$landmark','$FloodImageURL', '$shop', '$ShopPhoneNumber')";
         echo "Record submitted. ";
 
         // For successful record submission, display message
