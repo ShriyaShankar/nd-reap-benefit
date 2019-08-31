@@ -71,7 +71,7 @@
             echo("<script>swal({
                   icon: 'success',
                   title: 'Congratulations!',
-                  text: 'You are a great citizen! Thanks for the submission :)',
+                  text: 'You are a great citizen! Thanks for the submission :',
                   button: 'OK',
                   closeOnClickOutside: false
             }).then(function(){window.location='main.php'});</script>");
