@@ -255,6 +255,7 @@
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
                     <option value="GaneshaIdol">Clay Ganesha Idol</option>
+                    <option value="GaneshaVisarjane">Ganesha Visarjane</option>
                  <!--   <option value="Waste">Waste</option>
                     <option value="Water">Water</option>
                     <option value="Air">Air</option>
@@ -298,12 +299,12 @@
 
         <div class="form-group">
             <label for="shop"><br><b>Shop Name</b></label>
-            <input type="text" placeholder="Or vendor's name" name="shop" >
+            <input type="text" placeholder="If applicable" name="shop" >
         </div>
 
         <div class="form-group">
             <label for="ShopPhoneNumber"><br><b>Shop Phone Number:</b></label>
-            <input type="text" placeholder="Contact Number" name="ShopPhoneNumber" >
+            <input type="text" placeholder="If applicable" name="ShopPhoneNumber" >
         </div>
             
         <style>
