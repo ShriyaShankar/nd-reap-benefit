@@ -57,7 +57,7 @@ var mainApp = {};
 
               //upload file
               //var userIdentifierImage = (firebase.auth().currentUser.email!=null) ? firebase.auth().currentUser.email : firebase.auth().currentUser.phoneNumber;
-              console.error(userIdentifierImage);
+              //console.error(userIdentifierImage);
               var task = storageRef.child(`EcoGaneshaImages/${uuidv4()}`).put(file);
               console.log(file.name.split('.').pop());
         
