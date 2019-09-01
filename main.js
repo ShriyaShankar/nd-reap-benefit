@@ -44,7 +44,7 @@ var mainApp = {};
       });
       }
 
-      console.log(uuidv4());
+      console.log(`The UUID is ${uuidv4()}`);
     //Firebase storage image Upload
     var floodImage = document.getElementById('floodImage');
     floodImage.addEventListener('change', function(e) 
