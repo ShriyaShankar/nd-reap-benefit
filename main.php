@@ -351,8 +351,8 @@
        </form>
     </div>
 
-    <!-- <script src="firebase.js"></script> -->
-    <!-- <script src="main.js"></script> -->
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
     <script>
         
         /* Display of map */
