@@ -44,11 +44,12 @@ var mainApp = {};
       });
       }
 
-      console.log(`The UUID is ${uuidv4()}`);
+      
     //Firebase storage image Upload
     var floodImage = document.getElementById('floodImage');
     floodImage.addEventListener('change', function(e) 
     {
+      console.log(`The UUID is ${uuidv4()}`);
               console.log("Works!");
               var file = e.target.files[0];
               const storageService = firebase.storage();
