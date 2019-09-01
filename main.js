@@ -2,39 +2,39 @@
 
 var mainApp = {};
 
-(function(){
+// (function(){
     
-    var firebase = app_fireBase;
-    var uid = null;
-    firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-                uid = user.uid;
-                // Returns the signed-in user's display name.
-                function getUserEmail() {
-                      document.getElementById("identifier").innerHTML = "<b>Email</b>";
-                      return firebase.auth().currentUser.email;
-                }
-                var identifier = getUserEmail();
-                if(identifier==null) {
-                    document.getElementById("identifier").innerHTML = "<b>Phone Number</b>";
-                    identifier = firebase.auth().currentUser.phoneNumber;
-                }
+//     var firebase = app_fireBase;
+//     var uid = null;
+//     firebase.auth().onAuthStateChanged(function(user) {
+//         if (user) {
+//                 uid = user.uid;
+//                 // Returns the signed-in user's display name.
+//                 function getUserEmail() {
+//                       document.getElementById("identifier").innerHTML = "<b>Email</b>";
+//                       return firebase.auth().currentUser.email;
+//                 }
+//                 var identifier = getUserEmail();
+//                 if(identifier==null) {
+//                     document.getElementById("identifier").innerHTML = "<b>Phone Number</b>";
+//                     identifier = firebase.auth().currentUser.phoneNumber;
+//                 }
 
-                document.getElementById("form-name").setAttribute("value", identifier);
-                if(firebase.auth().currentUser.emailVerified===false && firebase.auth().currentUser.email!=null){
-                       window.location = "/verify.html";
-                 }
+//                 document.getElementById("form-name").setAttribute("value", identifier);
+//                 if(firebase.auth().currentUser.emailVerified===false && firebase.auth().currentUser.email!=null){
+//                        window.location = "/verify.html";
+//                  }
 
-        } 
-        else {
-                uid = null;
-                window.location.replace("index.html");
-        }
-    });
+//         } 
+//         else {
+//                 uid = null;
+//                 window.location.replace("index.html");
+//         }
+//     });
 
-    document.getElementById("logOut").addEventListener('click', e => {
-          firebase.auth().signOut();
-    });
+//     document.getElementById("logOut").addEventListener('click', e => {
+//           firebase.auth().signOut();
+//     });
 
     //Firebase storage image Upload
     var floodImage = document.getElementById('floodImage');
