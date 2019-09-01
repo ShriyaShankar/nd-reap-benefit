@@ -36,6 +36,15 @@ var mainApp = {};
 //           firebase.auth().signOut();
 //     });
 
+
+      function uuidv4() {
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+      });
+      }
+
+      console.log(uuidv4());
     //Firebase storage image Upload
     var floodImage = document.getElementById('floodImage');
     floodImage.addEventListener('change', function(e) 
@@ -44,12 +53,12 @@ var mainApp = {};
               var file = e.target.files[0];
               const storageService = firebase.storage();
               const storageRef = storageService.ref();
-              const leadTimestamp = Math.floor(Date.now() / 1000);
+              //const leadTimestamp = Math.floor(Date.now() / 1000);
 
               //upload file
-              var userIdentifierImage = (firebase.auth().currentUser.email!=null) ? firebase.auth().currentUser.email : firebase.auth().currentUser.phoneNumber;
+              //var userIdentifierImage = (firebase.auth().currentUser.email!=null) ? firebase.auth().currentUser.email : firebase.auth().currentUser.phoneNumber;
               console.error(userIdentifierImage);
-              var task = storageRef.child(`EcoGaneshaImages/${userIdentifierImage}_${leadTimestamp}`).put(file);
+              var task = storageRef.child(`EcoGaneshaImages/${uuidv4()}`).put(file);
               console.log(file.name.split('.').pop());
         
               // Listen for state changes, errors, and completion of the upload.
