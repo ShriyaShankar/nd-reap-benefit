@@ -2,9 +2,9 @@
 
 var mainApp = {};
 
-// (function(){
+(function(){
     
-//     var firebase = app_fireBase;
+    var firebase = app_fireBase;
 //     var uid = null;
 //     firebase.auth().onAuthStateChanged(function(user) {
 //         if (user) {
