@@ -317,7 +317,7 @@
             }  */
             if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
-                    marker.bindPopup(\"$landmark\");
+                    marker.bindPopup(\"$shop <br> $landmark\");
             </script>");
             }
             if($cat == 'GaneshaVisarjane'){
