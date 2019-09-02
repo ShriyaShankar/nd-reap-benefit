@@ -229,6 +229,7 @@
                 }
         });
 
+        var visarjane = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/1197/1197849.svg'});
         var ganesha = new category_icon({iconUrl: 'https://image.flaticon.com/icons/svg/805/805294.svg'});
        </script>
    </body>
