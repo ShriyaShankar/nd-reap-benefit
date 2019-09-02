@@ -4,15 +4,24 @@
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145741958-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145741958-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     Feature-Policy: geolocation '*'
     gtag('config', 'UA-145741958-1');
-    </script>
+    </script> -->
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145741958-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-145741958-1');
+        </script>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -342,8 +351,8 @@
        </form>
     </div>
 
-    <!-- <script src="firebase.js"></script> -->
-    <!-- <script src="main.js"></script> -->
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>
     <script>
         
         /* Display of map */
