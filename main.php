@@ -255,7 +255,7 @@
         
         <div class="form-group">
             <label for="PhoneNumber"><br><b>Phone Number</b></label>
-            <input type="text" placeholder="Enter your mobile number" name="PhoneNumber" >
+            <input type="text" placeholder="Enter your mobile number" name="PhoneNumber" required >
         </div>
 
 
@@ -348,7 +348,7 @@
         </div>
         <input type="url" hidden name="floodImageURL" id="floodImageURL">
 
-        <input class="btn btn-success" type="submit" value="Submit" name="submit">
+        <button type="submit" name="submit">Submit</button>
             
         <!-- Description -->
       <!--  <div class="form-group">
@@ -475,7 +475,7 @@
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
     $sql = "INSERT INTO Diwali_Data (Name, WardNumber, PhoneNumber, Latitude, Longitude)
-    VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude', '$category')";
+    VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude')";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 

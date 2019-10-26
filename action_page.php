@@ -61,7 +61,7 @@
 
         // Query to insert values into database
         $sql = "INSERT INTO Diwali_Data (Name, WardNumber, PhoneNumber, Latitude, Longitude)
-        VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude', '$category')";
+        VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude')";
         echo "Record submitted. ";
 
         // For successful record submission, display message
