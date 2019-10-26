@@ -231,18 +231,42 @@
 
 
 
+
     <div>
+        <form action="/action_page.php" method="POST">
+
+        <div class="form-group">
+            Name
+            <input type="text" placeholder="Enter name" name="name" id="name" required />
+        </div>
+
+        <div class="form-group">
+            Ward Number
+            <input type="text" placeholder="Enter your ward number" name="ward" id="ward" required />
+        </div>
+
+        <div class="form-group">
+            Phone Number
+            <input type="text" placeholder="Enter Name" name="PhoneNumber" id="PhoneNumber" required />
+        </div>
+
+        <input type="submit" value="Submit">
         
-        <!-- LogOut button -->
+        </form>
+
+    </div>
+
+  <!--  <div>
+        
+         LogOut button -->
       <!--  <h2><button  class="button" id="logOut">LogOut</button></h2> -->
-        
-        <!-- Form fields -->
+      <!-- 
+           
 
         <form action="action_page.php" method = "POST" class="form-container" enctype="multipart/form-data">
         <p>The Location is <p id="locationdisplay"></p> </p>
             
-        
-        <!-- Name/email/phone number -->
+       
         <div class="form-group">
             <label for="identifier" id="identifier">Name</label>
             <input type="text" placeholder="Enter Name" name="name" id="form-name" required />
@@ -259,7 +283,7 @@
         </div>
 
 
-        <!-- Latitude longitude -->
+        
         <div class="form-group">
             <label for="latitude"><b>Latitude</b></label>
             <input type="text" placeholder="Enter latitude" name="latitude" required id="lat" />
@@ -269,8 +293,7 @@
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
         </div> 
         
-        <!-- Category -->
-      <!--  <div class="form-group">
+   <div class="form-group">
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
@@ -285,10 +308,10 @@
                     <option value='Urination'>Public Urination</option> 
                 </select>
                 <br>
-        </div> -->
+        </div> 
             
-        <!-- Severity scale -->  
-      <!--  <label><b><br>Status of Problem: <b/><br></label>
+          
+        <label><b><br>Status of Problem: <b/><br></label>
         <div class="some-class">
             <input type="radio" class="radio" name="severity" value="mild" id="y" />
             <label for="y">Mild</label>
@@ -297,15 +320,15 @@
             <input type="radio" class="radio" name="severity" value="severe" id="p" />
             <label for="p">Severe</label>
         </div>
-    -->
- <!--   <label><b><br>Type of Ganesha Idol: <b/><br></label>
+    
+    <label><b><br>Type of Ganesha Idol: <b/><br></label>
         <div class="some-class">
             <input type="radio" class="radio" name="idol" value="clay" id="y" />
             <label for="y">Clay Idol</label>
             <input type="radio" class="radio" name="idol" value="PoP" id="z" />
             <label for="z">PoP Idol</label>
-        </div> -->
-<!-- 
+        </div> 
+
          Location 
         <div class="form-group">
             <label for="location"><b><br><br>Location</b></label>
@@ -322,7 +345,7 @@
             <input type="text" placeholder="If applicable" name="shop" >
         </div>
 
-     -->   
+       
             
         <style>
         input[type=file] {
@@ -339,7 +362,7 @@
         }
         </style>
             
-        <!-- Image upload -->
+         Image upload 
         <div class="form-group">
             <form action="POST">
                 Upload Image: (optional)<input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
@@ -350,16 +373,18 @@
 
         <button type="submit" name="submit">Submit</button>
             
-        <!-- Description -->
-      <!--  <div class="form-group">
+         Description 
+        <div class="form-group">
             <label for="description"><br><b>Number of idols:</b></label>
             <input type="text" placeholder="Mention for each type of idol" name="description" >
-        </div> -->
+        </div> 
             
         
 
        </form>
     </div>
+       -->
+       
 
     <script src="firebase.js"></script>
     <script src="main.js"></script>
