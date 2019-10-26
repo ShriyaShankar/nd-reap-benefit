@@ -16,7 +16,7 @@
     $password = "r3apb3n3fit";
     $dbname = "nd_manager";
     //$table = "data";
-    $table = "Clay_Ganesha_Idol";
+    $table = "Diwali_Data";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);

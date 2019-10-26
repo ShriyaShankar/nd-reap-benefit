@@ -305,14 +305,14 @@
             <input type="radio" class="radio" name="idol" value="PoP" id="z" />
             <label for="z">PoP Idol</label>
         </div> -->
-
-        <!-- Location -->
+<!-- 
+         Location 
         <div class="form-group">
             <label for="location"><b><br><br>Location</b></label>
             <input type="text" placeholder="Location" readonly name="location" required id="lcn">
         </div>
       
-    <!--    <div class="form-group">
+       <div class="form-group">
             <label for="description"><br><b>Landmark</b></label>
             <input type="text" placeholder="Landmark nearby, if any" name="landmark" >
         </div>
@@ -472,25 +472,29 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "SELECT Latitude, Longitude, Category, Landmark, ShopName, ShopPhoneNumber from Clay_Ganesha_Idol";
+    $sql = "INSERT INTO Clay_Ganesha_Idol (Name, WardNumber, PhoneNumber, Latitude, Longitude)
+    VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude', '$category')";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) 
     {
         while($row = $result->fetch_assoc()) 
         {
-            $floatlat = floatval( $row["Latitude"]);
-            $floatlng = floatval( $row["Longitude"]);
-            $cat = $row["Category"];
-            $landmark = $row["Landmark"];
-            $shop = $row["ShopName"];
-           // $desc = $row["description"];
+            $name=$_POST['name'];
+            $latitude=$_POST['latitude'];
+            $longitude=$_POST['longitude'];
+        //  $category=ucfirst($_POST['category']);
+            $location=$_POST['location'];
+        //  $landmark=$_POST['landmark'];
+            $FloodImageURL = $_POST['floodImageURL'];
+            $WardNumber = $_POST['ward'];
+            $PhoneNumber = $_POST['PhoneNumber'];
 
             //$getcategory = "Select * from Clay_Ganesha_Idol";
             //$getcategoryresult = $conn->query($getcategory);
             //$getcategoryrow = $getcategoryresult->fetch_assoc();
          //   $cat = $getcategoryrow["primary_category"];    //Assigning the category to the primary key of the enumerated_category table
-            echo("<script>console.log('$cat');</script>");
+          //  echo("<script>console.log('$cat');</script>");
 
             /* Comparison to pick out appropriate icon */
           //  if($desc != NULL){
