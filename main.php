@@ -186,7 +186,7 @@
         } 
 
         #form {
-            border-radius: 5px;
+            border-radius: 20px;
             background-color: #f2f2f2;
             padding: 20px;
         }
@@ -240,6 +240,7 @@
 
 
     <div id="form">
+        Please fill out the form:
         <form action="/action_page.php" method="POST">
 
         <div class="form-group">
