@@ -240,7 +240,8 @@
 
 
     <div id="form">
-        Please fill out the form:
+        <h3>Please fill out the form:<h3>
+        <br/>
         <form action="/action_page.php" method="POST">
 
         <div class="form-group">
