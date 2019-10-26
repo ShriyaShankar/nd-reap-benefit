@@ -347,6 +347,8 @@
             </form>
         </div>
         <input type="url" hidden name="floodImageURL" id="floodImageURL">
+
+        <input class="btn btn-success" type="submit" value="Submit" name="submit">
             
         <!-- Description -->
       <!--  <div class="form-group">
@@ -354,7 +356,7 @@
             <input type="text" placeholder="Mention for each type of idol" name="description" >
         </div> -->
             
-        <input class="btn btn-success" type="submit" value="Submit" name="submit">
+        
 
        </form>
     </div>
@@ -472,7 +474,7 @@
 
     /* To read db and print out rexpective icons with description */
    // $sql = "SELECT latitude, longitude, category, description from data";
-    $sql = "INSERT INTO Clay_Ganesha_Idol (Name, WardNumber, PhoneNumber, Latitude, Longitude)
+    $sql = "INSERT INTO Diwali_Data (Name, WardNumber, PhoneNumber, Latitude, Longitude)
     VALUES ('$name', '$WardNumber', '$PhoneNumber, '$latitude', '$longitude', '$category')";
     $result = $conn->query($sql);
 
@@ -539,7 +541,7 @@
                     marker.bindPopup(\"$desc\");
             </script>");
             }  */
-            if($cat == 'GaneshaIdol'){
+        /*    if($cat == 'GaneshaIdol'){
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: ganesha}).addTo(mymap);
                     marker.bindPopup(\"$shop <br> $landmark\"); 
             </script>");
@@ -549,7 +551,7 @@
                 echo("<script> var marker = L.marker([$floatlat, $floatlng], {icon: visarjane}).addTo(mymap);
                     marker.bindPopup(\"$shop <br> $landmark\"); 
             </script>");
-            }
+            } */
         // }
         }
     } 
