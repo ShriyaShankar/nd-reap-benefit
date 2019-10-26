@@ -130,6 +130,7 @@
 
     <style>
         
+
         /* LogOut button */
         h2 {
         position: absolute;
@@ -183,6 +184,11 @@
         clear: none;
         margin: 10px 10 0 2px;
         } 
+
+        .form-group{
+            border: 2px;
+            margin: 3px 1px;
+        }
         
      </style>
 </head>
@@ -251,7 +257,7 @@
         </div>
 
         <input type="submit" value="Submit">
-        
+
         </form>
 
     </div>
