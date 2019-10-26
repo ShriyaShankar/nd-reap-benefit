@@ -31,8 +31,8 @@
     }
 
     // Form values are mapped to database fields
-    if(isset($_POST['submit']))
-    {
+  //  if(isset($_POST['submit']))
+  //  {
        /* $name=$_POST['name'];
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
@@ -93,5 +93,5 @@
         
         // Close connection
         $conn->close();
-    }
+ //   }
 ?>
