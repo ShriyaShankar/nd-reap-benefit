@@ -264,8 +264,15 @@
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
         </div>
 
-        Upload Image: (optional)<input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+        Kasa Group Image: <input type="file"  style="width: 90%;" value="Upload" id="kasa" accept="image/*;capture=camera">
         <p id="ProgressBar"></p>
+
+        Rangoli Group Image: <input type="file"  style="width: 90%;" value="Upload" id="rangoligroup" accept="image/*;capture=camera">
+        <p id="ProgressBar"></p>
+
+        Only Rangoli Image: <input type="file"  style="width: 90%;" value="Upload" id="rangolionly" accept="image/*;capture=camera">
+        <p id="ProgressBar"></p>
+        
         <br/>
         <input type="submit" value="Submit">
 

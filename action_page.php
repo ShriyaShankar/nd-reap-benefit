@@ -65,6 +65,7 @@
         VALUES ('$name', '$WardNumber', '$PhoneNumber', '$latitude', '$longitude')";
         echo "Record submitted. ";
 
+
         // For successful record submission, display message
         if ($conn->query($sql) === TRUE)
         {
