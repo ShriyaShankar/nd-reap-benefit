@@ -246,7 +246,7 @@
 
         <div class="form-group">
             Ward Number
-            <input type="text" placeholder="Enter your ward number" name="ward" id="ward" required />
+            <input type="text" placeholder="Enter your ward number" name="ward" id="WardNumber" required />
         </div>
 
         <div class="form-group">

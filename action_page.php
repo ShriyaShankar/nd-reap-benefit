@@ -43,21 +43,21 @@
         $FloodImageURL = $_POST['floodImageURL'];
         $TypeOfIdol = $_POST['idol'];
         */
-        echo "Entered if";
+      //  echo "Entered if";
         $name=$_POST['name'];
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
       //  $category=ucfirst($_POST['category']);
         $location=$_POST['location'];
       //  $landmark=$_POST['landmark'];
-        $FloodImageURL = $_POST['floodImageURL'];
-        $WardNumber = $_POST['ward'];
+     //   $FloodImageURL = $_POST['floodImageURL'];
+        $WardNumber = $_POST['WardNumber'];
         $PhoneNumber = $_POST['PhoneNumber'];
        
         //Get row where category is equal to the subcategory
-        $getcategory = "Select * from enumerated_category where '$category'=sub_category";
-        $getcategoryresult = $conn->query($getcategory);
-        $getcategoryrow = $getcategoryresult->fetch_assoc();
+      //  $getcategory = "Select * from enumerated_category where '$category'=sub_category";
+      //  $getcategoryresult = $conn->query($getcategory);
+      //  $getcategoryrow = $getcategoryresult->fetch_assoc();
        // $category = $getcategoryrow["id"];    //Assigning the category to the primary key of the enumerated_category table
 
         // Query to insert values into database
