@@ -185,9 +185,10 @@
         margin: 10px 10 0 2px;
         } 
 
-        .form-group{
-            border: 2px;
-            margin: 3px 1px;
+        #form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
         
      </style>
@@ -238,7 +239,7 @@
 
 
 
-    <div>
+    <div id="form">
         <form action="/action_page.php" method="POST">
 
         <div class="form-group">
