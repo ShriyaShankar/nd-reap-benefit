@@ -258,7 +258,7 @@
             <label for="latitude">Latitude</label>
             <input type="text" placeholder="Enter latitude" name="latitude" required id="lat" />
         </div>
-        
+
         <div class="form-group">
             <label for="longitude">Longitude</label>
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
@@ -420,7 +420,7 @@
             var radius = e.accuracy / 2;
             L.marker(e.latlng).addTo(mymap).bindPopup("You are within " + radius + " meters from this point").openPopup();
             L.circle(e.latlng, radius).addTo(mymap);
-            document.getElementById("locationdisplay").innerHTML = e.latlng;
+           // document.getElementById("locationdisplay").innerHTML = e.latlng;
             document.getElementById('lat').setAttribute("value", e.latlng.lat);
             document.getElementById('long').setAttribute("value", e.latlng.lng);
           //  document.getElementById('lcn').setAttribute("value", `${e.latlng.lat},${e.latlng.lng}`);
@@ -458,10 +458,10 @@
                 text: 'Thank you for selecting location. Fill form below!',
                 button: 'OK',
                 });
-            document.getElementById('locationdisplay').innerHTML = storeloc;
+          //  document.getElementById('locationdisplay').innerHTML = storeloc;
             document.getElementById('lat').value = one;
             document.getElementById('long').value = two;
-            document.getElementById('lcn').value= res;
+         //   document.getElementById('lcn').value= res;
         }
         mymap.on('click', onMapClick);
 
