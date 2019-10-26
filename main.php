@@ -264,6 +264,9 @@
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
         </div>
 
+        Upload Image: (optional)<input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
+        <p id="ProgressBar"></p>
+
         <input type="submit" value="Submit">
 
         </form>
