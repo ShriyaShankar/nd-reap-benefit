@@ -43,6 +43,7 @@
         $FloodImageURL = $_POST['floodImageURL'];
         $TypeOfIdol = $_POST['idol'];
         */
+        echo "Entered if";
         $name=$_POST['name'];
         $latitude=$_POST['latitude'];
         $longitude=$_POST['longitude'];
