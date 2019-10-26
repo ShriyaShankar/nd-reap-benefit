@@ -235,7 +235,7 @@
 
 
     <div id="form">
-        <h3>Please fill out the form:<h3>
+        <h3>Please fill out the form:</h3>
         <br/>
         <form action="/action_page.php" method="POST">
 
