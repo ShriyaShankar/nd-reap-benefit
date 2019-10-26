@@ -499,7 +499,7 @@
     
     //Credentials
     $servername = "localhost";
-    $username = "admin";
+    $username = "root";
     $password = "S0lvesm@lld3ntbig";
     $dbname = "nd_manager";
 

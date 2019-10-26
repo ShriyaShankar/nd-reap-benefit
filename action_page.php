@@ -12,8 +12,8 @@
 
     // Credentials to access MySQL database
     $servername = "localhost";
-    $username = "admin";
-    $password = "r3apb3n3fit";
+    $username = "root";
+    $password = "S0lvesm@lld3ntbig";
     $dbname = "nd_manager";
     //$table = "data";
     $table = "Diwali_Data";
