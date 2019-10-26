@@ -500,7 +500,7 @@
     //Credentials
     $servername = "localhost";
     $username = "admin";
-    $password = "r3apb3n3fit";
+    $password = "S0lvesm@lld3ntbig";
     $dbname = "nd_manager";
 
     // Create connection
@@ -528,7 +528,7 @@
             $location=$_POST['location'];
         //  $landmark=$_POST['landmark'];
             $FloodImageURL = $_POST['floodImageURL'];
-            $WardNumber = $_POST['ward'];
+            $WardNumber = $_POST['WardNumber'];
             $PhoneNumber = $_POST['PhoneNumber'];
 
             //$getcategory = "Select * from Clay_Ganesha_Idol";
