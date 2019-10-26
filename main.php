@@ -140,12 +140,7 @@
         }
         
         /* Category Key button */
-        h3 {
-        position: absolute;
-        left: 130px;
-        top: 340px;
-        z-index: 100;
-        }
+    
         
         /* Provides padding and makes the keys red and uniform */
         
