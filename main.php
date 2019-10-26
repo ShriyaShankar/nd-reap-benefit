@@ -256,13 +256,11 @@
 
         <div class="form-group">
             Latitude
-            <label for="latitude"></label>
             <input type="text" placeholder="Enter latitude" name="latitude" required id="lat" />
         </div>
 
         <div class="form-group">
             Longitude
-            <label for="longitude"></label>
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
         </div>
 
