@@ -234,7 +234,7 @@
     <div>
         
         <!-- LogOut button -->
-        <h2><button  class="button" id="logOut">LogOut</button></h2>
+      <!--  <h2><button  class="button" id="logOut">LogOut</button></h2> -->
         
         <!-- Form fields -->
 
@@ -244,10 +244,21 @@
         
         <!-- Name/email/phone number -->
         <div class="form-group">
-            <label for="identifier" id="identifier"></label>
+            <label for="identifier" id="identifier">Name</label>
             <input type="text" placeholder="Enter Name" name="name" id="form-name" required />
         </div>
+
+        <div class="form-group">
+            <label for="ward" id="ward">Ward Number</label>
+            <input type="text" placeholder="Enter your ward number" name="ward" id="ward" required />
+        </div>
         
+        <div class="form-group">
+            <label for="PhoneNumber"><br><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter your mobile number" name="PhoneNumber" >
+        </div>
+
+
         <!-- Latitude longitude -->
         <div class="form-group">
             <label for="latitude"><b>Latitude</b></label>
@@ -256,25 +267,25 @@
         <div class="form-group">
             <label for="longitude"><b>Longitude</b></label>
             <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
-        </div>
+        </div> 
         
         <!-- Category -->
-        <div class="form-group">
+      <!--  <div class="form-group">
             <label><b>Category:<br><b/></label>
                 <select name="category" required>
                     <option disabled="disabled" selected="selected">---Select Category--</option>
                     <option value="GaneshaIdol">Clay Ganesha Idol</option>
                     <option value="GaneshaVisarjane">Ganesha Visarjane</option>
-                 <!--   <option value="Waste">Waste</option>
+                   <option value="Waste">Waste</option>
                     <option value="Water">Water</option>
                     <option value="Air">Air</option>
                     <option value="Sanitation">Sanitation</option>
                     <option value='Flood'>Urban Flooding</option>
                     <option value='Tree'>Fallen Tree</option>
-                    <option value='Urination'>Public Urination</option> -->
+                    <option value='Urination'>Public Urination</option> 
                 </select>
                 <br>
-        </div>
+        </div> -->
             
         <!-- Severity scale -->  
       <!--  <label><b><br>Status of Problem: <b/><br></label>
@@ -301,7 +312,7 @@
             <input type="text" placeholder="Location" readonly name="location" required id="lcn">
         </div>
       
-        <div class="form-group">
+    <!--    <div class="form-group">
             <label for="description"><br><b>Landmark</b></label>
             <input type="text" placeholder="Landmark nearby, if any" name="landmark" >
         </div>
@@ -311,10 +322,7 @@
             <input type="text" placeholder="If applicable" name="shop" >
         </div>
 
-        <div class="form-group">
-            <label for="ShopPhoneNumber"><br><b>Shop Phone Number:</b></label>
-            <input type="text" placeholder="If applicable" name="ShopPhoneNumber" >
-        </div>
+     -->   
             
         <style>
         input[type=file] {
