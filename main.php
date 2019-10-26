@@ -266,7 +266,7 @@
 
         Upload Image: (optional)<input type="file"  style="width: 90%;" value="Upload" id="floodImage" accept="image/*;capture=camera">
         <p id="ProgressBar"></p>
-
+        <br/>
         <input type="submit" value="Submit">
 
         </form>
