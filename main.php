@@ -254,6 +254,15 @@
             <input type="text" placeholder="Enter Name" name="PhoneNumber" id="PhoneNumber" required />
         </div>
 
+        <div class="form-group">
+            <label for="latitude"><b>Latitude</b></label>
+            <input type="text" placeholder="Enter latitude" name="latitude" required id="lat" />
+        </div>
+        <div class="form-group">
+            <label for="longitude"><b>Longitude</b></label>
+            <input type="text" placeholder="Enter longitude" name="longitude" required id="long" />
+        </div>
+
         <input type="submit" value="Submit">
 
         </form>
